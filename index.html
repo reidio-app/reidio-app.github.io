@@ -49,7 +49,7 @@
 
     /* Header */
     header {
-      padding: 24px 0;
+      padding: 20px 0;
       border-bottom: 1px solid var(--border);
       backdrop-filter: blur(12px);
       position: sticky;
@@ -87,7 +87,7 @@
 
     .nav-links {
       display: flex;
-      gap: 20px;
+      gap: 16px;
       align-items: center;
     }
 
@@ -102,8 +102,26 @@
       color: var(--text-primary);
     }
 
+    /* Language Switcher */
+    .lang-switcher select {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      color: var(--text-primary);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    .lang-switcher select:hover, .lang-switcher select:focus {
+      border-color: var(--border-focus);
+      background: rgba(38, 45, 62, 0.9);
+    }
+
     .btn-sm {
-      padding: 8px 16px;
+      padding: 7px 14px;
       border-radius: 8px;
       font-size: 0.9rem;
       font-weight: 600;
@@ -122,7 +140,7 @@
 
     /* Hero Section */
     .hero {
-      padding: 70px 0 50px;
+      padding: 65px 0 45px;
       text-align: center;
     }
 
@@ -153,7 +171,7 @@
     .hero p {
       font-size: 1.2rem;
       color: var(--text-secondary);
-      max-width: 680px;
+      max-width: 700px;
       margin: 0 auto 36px;
     }
 
@@ -162,7 +180,7 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: 16px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
 
     .feature-pill {
@@ -175,6 +193,36 @@
       display: flex;
       align-items: center;
       gap: 8px;
+    }
+
+    /* Counter Badge */
+    .stat-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      padding: 8px 20px;
+      border-radius: 100px;
+      font-size: 0.95rem;
+      color: #6ee7b7;
+      margin-top: 10px;
+      box-shadow: 0 4px 16px rgba(16, 185, 129, 0.15);
+    }
+
+    .stat-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 10px #10b981;
+      animation: pulse-dot 2s infinite;
+    }
+
+    @keyframes pulse-dot {
+      0% { transform: scale(0.9); opacity: 0.7; }
+      50% { transform: scale(1.3); opacity: 1; }
+      100% { transform: scale(0.9); opacity: 0.7; }
     }
 
     /* Presets Section */
@@ -495,6 +543,12 @@
       .guide-section {
         padding: 24px;
       }
+      .nav-links {
+        gap: 10px;
+      }
+      .nav-links a:not(.btn-sm) {
+        display: none;
+      }
     }
   </style>
 </head>
@@ -508,8 +562,18 @@
         <span class="brand-title">reidio</span>
       </a>
       <div class="nav-links">
-        <a href="#presets">预制电台</a>
-        <a href="#guide">使用教程</a>
+        <a href="#presets" data-i18n="nav_presets">预制电台</a>
+        <a href="#guide" data-i18n="nav_guide">使用教程</a>
+        
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+          <select id="langSelect" onchange="setLanguage(this.value)" aria-label="Select Language">
+            <option value="zh-CN">🇨🇳 简体中文</option>
+            <option value="en">🇺🇸 English</option>
+            <option value="ja">🇯🇵 日本語</option>
+          </select>
+        </div>
+
         <a href="https://github.com/reidio-app" target="_blank" class="btn-sm">GitHub</a>
       </div>
     </div>
@@ -519,15 +583,22 @@
   <section class="hero">
     <div class="container">
       <div class="badge">
-        <span>✨</span> 极简高颜值桌面广播电台播放器
+        <span data-i18n="hero_badge">✨ 极简高颜值桌面广播电台播放器</span>
       </div>
-      <h1>全球声音，一触即达</h1>
-      <p>reidio 拥有无干扰极简播放条设计，内置本地 Whisper AI 实时语音转录与字幕。在这里下载各国家与语种的精选电台预设包，轻松导入即可开始收听。</p>
+      <h1 data-i18n="hero_title">全球声音，一触即达</h1>
+      <p data-i18n="hero_desc">reidio 拥有无干扰极简播放条设计，内置本地 Whisper AI 实时语音转录与字幕。在这里下载各国家与语种的精选电台预设包，轻松导入即可开始收听。</p>
+      
       <div class="features-row">
-        <div class="feature-pill">📻 极简桌面悬浮/Dock条</div>
-        <div class="feature-pill">🤖 Whisper 本地 AI 实时字幕</div>
-        <div class="feature-pill">🌍 数万全球高清流媒体电台</div>
-        <div class="feature-pill">⚡ 毫秒级快速导入与导出</div>
+        <div class="feature-pill" data-i18n="feat_pill1">📻 极简桌面悬浮/Dock条</div>
+        <div class="feature-pill" data-i18n="feat_pill2">🤖 Whisper 本地 AI 实时字幕</div>
+        <div class="feature-pill" data-i18n="feat_pill3">🌍 数万全球高清流媒体电台</div>
+        <div class="feature-pill" data-i18n="feat_pill4">⚡ 毫秒级快速导入与导出</div>
+      </div>
+
+      <!-- App Launch Count Badge -->
+      <div class="stat-badge" id="statBadge" style="display: none;">
+        <span class="stat-dot"></span>
+        <span><span data-i18n="stat_prefix">reidio 累计已被启动 </span><strong id="launchCount" style="color: #ffffff; font-size: 1.1rem; font-weight: 700;">--</strong><span data-i18n="stat_suffix"> 次</span></span>
       </div>
     </div>
   </section>
@@ -535,15 +606,15 @@
   <!-- Presets Section -->
   <section class="container" id="presets">
     <div class="section-title-wrap">
-      <h2>精选电台配置文件</h2>
-      <p>点击即可直接下载 JSON 配置文件，支持导入至 reidio 客户端</p>
+      <h2 data-i18n="sec_presets_title">精选电台配置文件</h2>
+      <p data-i18n="sec_presets_desc">点击即可直接下载 JSON 配置文件，支持导入至 reidio 客户端</p>
     </div>
 
     <!-- Filter Tabs -->
     <div class="filter-tabs">
-      <button class="tab-btn active" onclick="filterCategory('all', this)">全部配置</button>
-      <button class="tab-btn" onclick="filterCategory('country', this)">按国家 / 地区</button>
-      <button class="tab-btn" onclick="filterCategory('language', this)">按广播语种</button>
+      <button class="tab-btn active" onclick="filterCategory('all', this)" data-i18n="tab_all">全部配置</button>
+      <button class="tab-btn" onclick="filterCategory('country', this)" data-i18n="tab_country">按国家 / 地区</button>
+      <button class="tab-btn" onclick="filterCategory('language', this)" data-i18n="tab_language">按广播语种</button>
     </div>
 
     <!-- Grid -->
@@ -555,17 +626,17 @@
           <div class="preset-header">
             <div class="preset-icon">🌟</div>
             <div class="preset-meta">
-              <h3>全球收听精选</h3>
-              <span class="preset-badge">40 个电台</span>
+              <h3 data-i18n="preset_global_title">全球收听精选</h3>
+              <span class="preset-badge" data-i18n="preset_global_badge">40 个电台</span>
             </div>
           </div>
-          <p class="preset-desc">精选 Radio Browser 全球点赞与收听率最高的经典电台，涵盖流行、爵士、轻音乐与新闻。</p>
+          <p class="preset-desc" data-i18n="preset_global_desc">精选 Radio Browser 全球点赞与收听率最高的经典电台，涵盖流行、爵士、轻音乐与新闻。</p>
         </div>
         <div class="card-actions">
-          <button class="btn-preview" onclick="previewPreset('presets/stations-top-global.json', '全球收听精选')">预览</button>
+          <button class="btn-preview" onclick="previewPreset('presets/stations-top-global.json', 'preset_global_title')" data-i18n="btn_preview">预览</button>
           <a href="presets/stations-top-global.json" download="stations-top-global.json" class="btn-download">
             <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-            下载 JSON
+            <span data-i18n="btn_download">下载 JSON</span>
           </a>
         </div>
       </div>
@@ -576,17 +647,17 @@
           <div class="preset-header">
             <div class="preset-icon">🇨🇳</div>
             <div class="preset-meta">
-              <h3>中国精选电台</h3>
-              <span class="preset-badge">35 个电台</span>
+              <h3 data-i18n="preset_cn_title">中国精选电台</h3>
+              <span class="preset-badge" data-i18n="preset_cn_badge">35 个电台</span>
             </div>
           </div>
-          <p class="preset-desc">涵盖央广中国之声、音乐之声、动感101、凤凰资讯以及各大省市优质广播电台与金曲频道。</p>
+          <p class="preset-desc" data-i18n="preset_cn_desc">涵盖央广中国之声、音乐之声、动感101、凤凰资讯以及各大省市优质广播电台与金曲频道。</p>
         </div>
         <div class="card-actions">
-          <button class="btn-preview" onclick="previewPreset('presets/stations-country-cn.json', '中国精选电台')">预览</button>
+          <button class="btn-preview" onclick="previewPreset('presets/stations-country-cn.json', 'preset_cn_title')" data-i18n="btn_preview">预览</button>
           <a href="presets/stations-country-cn.json" download="stations-country-cn.json" class="btn-download">
             <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-            下载 JSON
+            <span data-i18n="btn_download">下载 JSON</span>
           </a>
         </div>
       </div>
@@ -597,17 +668,17 @@
           <div class="preset-header">
             <div class="preset-icon">🇺🇸</div>
             <div class="preset-meta">
-              <h3>美国精选电台</h3>
-              <span class="preset-badge">35 个电台</span>
+              <h3 data-i18n="preset_us_title">美国精选电台</h3>
+              <span class="preset-badge" data-i18n="preset_us_badge">35 个电台</span>
             </div>
           </div>
-          <p class="preset-desc">包含 NPR 著名新闻台、纽约 WNYC、西雅图独立音乐台 KEXP、优质爵士台与经典摇滚频道。</p>
+          <p class="preset-desc" data-i18n="preset_us_desc">包含 NPR 著名新闻台、纽约 WNYC、西雅图独立音乐台 KEXP、优质爵士台与经典摇滚频道。</p>
         </div>
         <div class="card-actions">
-          <button class="btn-preview" onclick="previewPreset('presets/stations-country-us.json', '美国精选电台')">预览</button>
+          <button class="btn-preview" onclick="previewPreset('presets/stations-country-us.json', 'preset_us_title')" data-i18n="btn_preview">预览</button>
           <a href="presets/stations-country-us.json" download="stations-country-us.json" class="btn-download">
             <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-            下载 JSON
+            <span data-i18n="btn_download">下载 JSON</span>
           </a>
         </div>
       </div>
@@ -618,17 +689,17 @@
           <div class="preset-header">
             <div class="preset-icon">🇬🇧</div>
             <div class="preset-meta">
-              <h3>英国精选电台</h3>
-              <span class="preset-badge">30 个电台</span>
+              <h3 data-i18n="preset_uk_title">英国精选电台</h3>
+              <span class="preset-badge" data-i18n="preset_uk_badge">30 个电台</span>
             </div>
           </div>
-          <p class="preset-desc">汇聚 BBC Radio 全系列、Capital FM 流行音乐榜、Classic FM 古典音乐与伦敦资讯台。</p>
+          <p class="preset-desc" data-i18n="preset_uk_desc">汇聚 BBC Radio 全系列、Capital FM 流行音乐榜、Classic FM 古典音乐与伦敦资讯台。</p>
         </div>
         <div class="card-actions">
-          <button class="btn-preview" onclick="previewPreset('presets/stations-country-uk.json', '英国精选电台')">预览</button>
+          <button class="btn-preview" onclick="previewPreset('presets/stations-country-uk.json', 'preset_uk_title')" data-i18n="btn_preview">预览</button>
           <a href="presets/stations-country-uk.json" download="stations-country-uk.json" class="btn-download">
             <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-            下载 JSON
+            <span data-i18n="btn_download">下载 JSON</span>
           </a>
         </div>
       </div>
@@ -639,17 +710,17 @@
           <div class="preset-header">
             <div class="preset-icon">🇯🇵</div>
             <div class="preset-meta">
-              <h3>日本精选电台</h3>
-              <span class="preset-badge">30 个电台</span>
+              <h3 data-i18n="preset_jp_title">日本精选电台</h3>
+              <span class="preset-badge" data-i18n="preset_jp_badge">30 个电台</span>
             </div>
           </div>
-          <p class="preset-desc">NHK 广播、Tokyo FM、J-Pop 流行樱花电台、ACG 动漫原声与经典日本爵士乐。</p>
+          <p class="preset-desc" data-i18n="preset_jp_desc">NHK 广播、Tokyo FM、J-Pop 流行樱花电台、ACG 动漫原声与经典日本爵士乐。</p>
         </div>
         <div class="card-actions">
-          <button class="btn-preview" onclick="previewPreset('presets/stations-country-jp.json', '日本精选电台')">预览</button>
+          <button class="btn-preview" onclick="previewPreset('presets/stations-country-jp.json', 'preset_jp_title')" data-i18n="btn_preview">预览</button>
           <a href="presets/stations-country-jp.json" download="stations-country-jp.json" class="btn-download">
             <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-            下载 JSON
+            <span data-i18n="btn_download">下载 JSON</span>
           </a>
         </div>
       </div>
@@ -660,17 +731,17 @@
           <div class="preset-header">
             <div class="preset-icon">💬</div>
             <div class="preset-meta">
-              <h3>英语综合精选</h3>
-              <span class="preset-badge">40 个电台</span>
+              <h3 data-i18n="preset_en_title">英语综合精选</h3>
+              <span class="preset-badge" data-i18n="preset_en_badge">40 个电台</span>
             </div>
           </div>
-          <p class="preset-desc">国际主流英语新闻、英语脱口秀、流行金曲与故事访谈，极度适合配合 Whisper AI 练习听力。</p>
+          <p class="preset-desc" data-i18n="preset_en_desc">国际主流英语新闻、英语脱口秀、流行金曲与故事访谈，极度适合配合 Whisper AI 练习听力。</p>
         </div>
         <div class="card-actions">
-          <button class="btn-preview" onclick="previewPreset('presets/stations-lang-en.json', '英语综合精选')">预览</button>
+          <button class="btn-preview" onclick="previewPreset('presets/stations-lang-en.json', 'preset_en_title')" data-i18n="btn_preview">预览</button>
           <a href="presets/stations-lang-en.json" download="stations-lang-en.json" class="btn-download">
             <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-            下载 JSON
+            <span data-i18n="btn_download">下载 JSON</span>
           </a>
         </div>
       </div>
@@ -681,17 +752,17 @@
           <div class="preset-header">
             <div class="preset-icon">🀄</div>
             <div class="preset-meta">
-              <h3>中文综合精选</h3>
-              <span class="preset-badge">40 个电台</span>
+              <h3 data-i18n="preset_zh_title">中文综合精选</h3>
+              <span class="preset-badge" data-i18n="preset_zh_badge">40 个电台</span>
             </div>
           </div>
-          <p class="preset-desc">华语流行经典、两岸三地音乐电台、民谣清唱、传统相声与有声广播综合精选集。</p>
+          <p class="preset-desc" data-i18n="preset_zh_desc">华语流行经典、两岸三地音乐电台、民谣清唱、传统相声与有声广播综合精选集。</p>
         </div>
         <div class="card-actions">
-          <button class="btn-preview" onclick="previewPreset('presets/stations-lang-zh.json', '中文综合精选')">预览</button>
+          <button class="btn-preview" onclick="previewPreset('presets/stations-lang-zh.json', 'preset_zh_title')" data-i18n="btn_preview">预览</button>
           <a href="presets/stations-lang-zh.json" download="stations-lang-zh.json" class="btn-download">
             <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-            下载 JSON
+            <span data-i18n="btn_download">下载 JSON</span>
           </a>
         </div>
       </div>
@@ -703,24 +774,24 @@
   <section class="container" id="guide">
     <div class="guide-section">
       <div class="section-title-wrap" style="margin-bottom: 0;">
-        <h2>3 步导入电台到 reidio</h2>
-        <p>只需几秒钟，快速填充你的电台列表</p>
+        <h2 data-i18n="guide_title">3 步导入电台到 reidio</h2>
+        <p data-i18n="guide_subtitle">只需几秒钟，快速填充你的电台列表</p>
       </div>
       <div class="steps-grid">
         <div class="step-item">
           <div class="step-number">1</div>
-          <h4>下载预设包</h4>
-          <p>在上方选择你喜欢的国家或语种包，点击「下载 JSON」保存到电脑本地。</p>
+          <h4 data-i18n="guide_step1_title">下载预设包</h4>
+          <p data-i18n="guide_step1_desc">在上方选择你喜欢的国家或语种包，点击「下载 JSON」保存到电脑本地。</p>
         </div>
         <div class="step-item">
           <div class="step-number">2</div>
-          <h4>右键打开菜单</h4>
-          <p>打开 reidio 客户端，在电台列表区域点击鼠标右键，选择「导入电台配置」。</p>
+          <h4 data-i18n="guide_step2_title">右键打开菜单</h4>
+          <p data-i18n="guide_step2_desc">打开 reidio 客户端，在电台列表区域点击鼠标右键，选择「导入电台配置」。</p>
         </div>
         <div class="step-item">
           <div class="step-number">3</div>
-          <h4>完成导入</h4>
-          <p>选择刚才下载的 <code>.json</code> 文件，系统将自动合并到你的电台列表，即刻畅听！</p>
+          <h4 data-i18n="guide_step3_title">完成导入</h4>
+          <p data-i18n="guide_step3_desc">选择刚才下载的 .json 文件，系统将自动合并到你的电台列表，即刻畅听！</p>
         </div>
       </div>
     </div>
@@ -731,7 +802,7 @@
     <div class="modal">
       <div class="modal-header">
         <h3 id="modalTitle">电台列表预览</h3>
-        <button class="btn-close" onclick="closeModal()">&times;</button>
+        <button class="btn-close" onclick="closeModal()" aria-label="Close">&times;</button>
       </div>
       <div class="modal-body" id="modalBody">
         <p style="color: var(--text-secondary); text-align: center;">加载中...</p>
@@ -742,8 +813,8 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p style="margin-bottom: 8px;">reidio · 极简网络电台 & 本地 AI 伴侣</p>
-      <p style="font-size: 0.82rem; color: #64748b;">
+      <p style="margin-bottom: 8px;" data-i18n="footer_tagline">reidio · 极简网络电台 & 本地 AI 伴侣</p>
+      <p style="font-size: 0.82rem; color: #64748b;" data-i18n="footer_credit">
         电台数据由 <a href="https://www.radio-browser.info/" target="_blank">Radio Browser</a> 提供支持 · 
         开源项目托管于 <a href="https://github.com/reidio-app" target="_blank">GitHub</a>
       </p>
@@ -751,6 +822,226 @@
   </footer>
 
   <script>
+    // i18n Translations Dictionary
+    const I18N = {
+      'zh-CN': {
+        page_title: "reidio - 极简网络电台播放器与电台配置预设",
+        page_desc: "reidio 是一款极简高颜值的桌面网络电台播放器，内置 AI 实时字幕转录。在此免费下载各国各语种预制电台配置文件。",
+        nav_presets: "预制电台",
+        nav_guide: "使用教程",
+        hero_badge: "✨ 极简高颜值桌面广播电台播放器",
+        hero_title: "全球声音，一触即达",
+        hero_desc: "reidio 拥有无干扰极简播放条设计，内置本地 Whisper AI 实时语音转录与字幕。在这里下载各国家与语种的精选电台预设包，轻松导入即可开始收听。",
+        feat_pill1: "📻 极简桌面悬浮/Dock条",
+        feat_pill2: "🤖 Whisper 本地 AI 实时字幕",
+        feat_pill3: "🌍 数万全球高清流媒体电台",
+        feat_pill4: "⚡ 毫秒级快速导入与导出",
+        stat_prefix: "reidio 累计已被启动 ",
+        stat_suffix: " 次",
+        sec_presets_title: "精选电台配置文件",
+        sec_presets_desc: "点击即可直接下载 JSON 配置文件，支持导入至 reidio 客户端",
+        tab_all: "全部配置",
+        tab_country: "按国家 / 地区",
+        tab_language: "按广播语种",
+        preset_global_title: "全球收听精选",
+        preset_global_badge: "40 个电台",
+        preset_global_desc: "精选 Radio Browser 全球点赞与收听率最高的经典电台，涵盖流行、爵士、轻音乐与新闻。",
+        preset_cn_title: "中国精选电台",
+        preset_cn_badge: "35 个电台",
+        preset_cn_desc: "涵盖央广中国之声、音乐之声、动感101、凤凰资讯以及各大省市优质广播电台与金曲频道。",
+        preset_us_title: "美国精选电台",
+        preset_us_badge: "35 个电台",
+        preset_us_desc: "包含 NPR 著名新闻台、纽约 WNYC、西雅图独立音乐台 KEXP、优质爵士台与经典摇滚频道。",
+        preset_uk_title: "英国精选电台",
+        preset_uk_badge: "30 个电台",
+        preset_uk_desc: "汇聚 BBC Radio 全系列、Capital FM 流行音乐榜、Classic FM 古典音乐与伦敦资讯台。",
+        preset_jp_title: "日本精选电台",
+        preset_jp_badge: "30 个电台",
+        preset_jp_desc: "NHK 广播、Tokyo FM、J-Pop 流行樱花电台、ACG 动漫原声与经典日本爵士乐。",
+        preset_en_title: "英语综合精选",
+        preset_en_badge: "40 个电台",
+        preset_en_desc: "国际主流英语新闻、英语脱口秀、流行金曲与故事访谈，极度适合配合 Whisper AI 练习听力。",
+        preset_zh_title: "中文综合精选",
+        preset_zh_badge: "40 个电台",
+        preset_zh_desc: "华语流行经典、两岸三地音乐电台、民谣清唱、传统相声与有声广播综合精选集。",
+        btn_preview: "预览",
+        btn_download: "下载 JSON",
+        guide_title: "3 步导入电台到 reidio",
+        guide_subtitle: "只需几秒钟，快速填充你的电台列表",
+        guide_step1_title: "下载预设包",
+        guide_step1_desc: "在上方选择你喜欢的国家或语种包，点击「下载 JSON」保存到电脑本地。",
+        guide_step2_title: "右键打开菜单",
+        guide_step2_desc: "打开 reidio 客户端，在电台列表区域点击鼠标右键，选择「导入电台配置」。",
+        guide_step3_title: "完成导入",
+        guide_step3_desc: "选择刚才下载的 .json 文件，系统将自动合并到你的电台列表，即刻畅听！",
+        modal_title_suffix: " - 包含电台",
+        modal_loading: "正在加载电台列表...",
+        modal_empty: "暂无电台信息",
+        modal_error: "加载预览失败，请直接下载 JSON 查看。",
+        footer_tagline: "reidio · 极简网络电台 & 本地 AI 伴侣",
+        footer_credit: '电台数据由 <a href="https://www.radio-browser.info/" target="_blank">Radio Browser</a> 提供支持 · 开源项目托管于 <a href="https://github.com/reidio-app" target="_blank">GitHub</a>'
+      },
+      'en': {
+        page_title: "reidio - Minimalist Desktop Radio & Preset Packs",
+        page_desc: "reidio is a minimalist, elegant desktop radio player with built-in AI live transcription. Free curated country & language station presets.",
+        nav_presets: "Presets",
+        nav_guide: "Tutorial",
+        hero_badge: "✨ Minimalist & Elegant Desktop Radio Player",
+        hero_title: "Global Radio at Your Fingertips",
+        hero_desc: "reidio features a distraction-free mini player with built-in local Whisper AI live transcription and subtitles. Download curated station presets and start listening immediately.",
+        feat_pill1: "📻 Distraction-Free Mini Player",
+        feat_pill2: "🤖 Local Whisper AI Live Subtitles",
+        feat_pill3: "🌍 30,000+ Global Streaming Stations",
+        feat_pill4: "⚡ Instant Preset Import & Export",
+        stat_prefix: "reidio launched ",
+        stat_suffix: " times worldwide",
+        sec_presets_title: "Curated Station Presets",
+        sec_presets_desc: "Click to download JSON station configs, ready to import into your reidio client",
+        tab_all: "All Presets",
+        tab_country: "By Country",
+        tab_language: "By Language",
+        preset_global_title: "Global Top Selection",
+        preset_global_badge: "40 Stations",
+        preset_global_desc: "Handpicked highest-rated global stations from Radio Browser, covering Pop, Jazz, Ambient, and News.",
+        preset_cn_title: "China Top Stations",
+        preset_cn_badge: "35 Stations",
+        preset_cn_desc: "Featuring CNR Voice of China, Music Radio, Dynamic 101, Phoenix News, and major provincial stations.",
+        preset_us_title: "United States Stations",
+        preset_us_badge: "35 Stations",
+        preset_us_desc: "Featuring NPR News, NYC WNYC, Seattle Indie KEXP, premium Jazz, and Classic Rock stations.",
+        preset_uk_title: "United Kingdom Stations",
+        preset_uk_badge: "30 Stations",
+        preset_uk_desc: "Featuring BBC Radio full suite, Capital FM Top 40, Classic FM, and London local news.",
+        preset_jp_title: "Japan Top Stations",
+        preset_jp_badge: "30 Stations",
+        preset_jp_desc: "Featuring NHK Radio, Tokyo FM, J-Pop Sakura, Anime Soundtracks, and classic Japanese Jazz.",
+        preset_en_title: "English Language Selection",
+        preset_en_badge: "40 Stations",
+        preset_en_desc: "International English news, talk shows, pop hits, and interviews. Perfect for listening practice with Whisper AI.",
+        preset_zh_title: "Chinese Language Selection",
+        preset_zh_badge: "40 Stations",
+        preset_zh_desc: "Chinese pop classics, cross-strait music stations, folk, traditional crosstalk, and audiobooks.",
+        btn_preview: "Preview",
+        btn_download: "Download JSON",
+        guide_title: "Import into reidio in 3 Steps",
+        guide_subtitle: "Fill your station playlist in seconds",
+        guide_step1_title: "Download Preset",
+        guide_step1_desc: "Pick your favorite country or language pack above, and click 'Download JSON' to save it locally.",
+        guide_step2_title: "Right-Click Context Menu",
+        guide_step2_desc: "Open the reidio client, right-click anywhere in the station list, and select 'Import Station Config'.",
+        guide_step3_title: "Import Complete",
+        guide_step3_desc: "Select the downloaded .json file. Stations will automatically merge into your list. Enjoy listening!",
+        modal_title_suffix: " - Station List",
+        modal_loading: "Loading station list...",
+        modal_empty: "No station data",
+        modal_error: "Failed to load preview. Please download the JSON directly.",
+        footer_tagline: "reidio · Minimalist Desktop Radio & Local AI Companion",
+        footer_credit: 'Radio data powered by <a href="https://www.radio-browser.info/" target="_blank">Radio Browser</a> · Open source on <a href="https://github.com/reidio-app" target="_blank">GitHub</a>'
+      },
+      'ja': {
+        page_title: "reidio - ミニマルなデスクトップラジオ＆プリセット",
+        page_desc: "reidioはミニマルで美しいデスクトップラジオプレーヤーです。AIリアルタイム字幕付き。厳選された国別・言語別のプリセットを無料ダウンロードできます。",
+        nav_presets: "プリセット",
+        nav_guide: "使い方",
+        hero_badge: "✨ ミニマルで美しいデスクトップラジオ",
+        hero_title: "世界中のラジオを、指先ひとつで",
+        hero_desc: "reidioは邪魔にならないミニマルなデザインと、ローカルWhisper AIによるリアルタイム文字起こし・字幕機能を備えています。厳選されたプリセットをダウンロードしてすぐに楽しめます。",
+        feat_pill1: "📻 ミニマルなフローティングバー",
+        feat_pill2: "🤖 ローカルWhisper AIリアルタイム字幕",
+        feat_pill3: "🌍 世界中数万の高音質ストリーミング",
+        feat_pill4: "⚡ ワンクリックでインポート・エクスポート",
+        stat_prefix: "reidio 累計起動回数：",
+        stat_suffix: " 回",
+        sec_presets_title: "厳選ラジオプリセット",
+        sec_presets_desc: "クリックしてJSON設定ファイルをダウンロードし、reidioにインポートできます",
+        tab_all: "すべて",
+        tab_country: "国・地域別",
+        tab_language: "言語別",
+        preset_global_title: "世界人気セレクション",
+        preset_global_badge: "40局",
+        preset_global_desc: "Radio Browserで評価・リスナー数の高い世界の定番ラジオ局（ポップ、ジャズ、ニュースなど）。",
+        preset_cn_title: "中国厳選ラジオ",
+        preset_cn_badge: "35局",
+        preset_cn_desc: "CNR中国之声、Music Radio、各地の人気局やニュース・音楽チャンネルを収録。",
+        preset_us_title: "アメリカ厳選ラジオ",
+        preset_us_badge: "35局",
+        preset_us_desc: "NPRニュース、WNYC、シアトルKEXP、名門ジャズ局やクラシックロックを収録。",
+        preset_uk_title: "イギリス厳選ラジオ",
+        preset_uk_badge: "30局",
+        preset_uk_desc: "BBC Radioシリーズ、Capital FM、Classic FMなどイギリスの人気ラジオ局を収録。",
+        preset_jp_title: "日本厳選ラジオ",
+        preset_jp_badge: "30局",
+        preset_jp_desc: "NHKラジオ、TOKYO FM、J-Pop、アニメソング、ジャズなどの人気局を収録。",
+        preset_en_title: "英語総合セレクション",
+        preset_en_badge: "40局",
+        preset_en_desc: "世界の英語ニュース、トーク番組、洋楽ヒット曲。Whisper AI字幕でのリスニング学習にも最適。",
+        preset_zh_title: "中国語総合セレクション",
+        preset_zh_badge: "40局",
+        preset_zh_desc: "華流ポップス、伝統芸能、ニュース、各地の中国語ラジオ放送を網羅。",
+        btn_preview: "プレビュー",
+        btn_download: "JSONダウンロード",
+        guide_title: "reidioへのインポート手順（簡単3ステップ）",
+        guide_subtitle: "数秒でラジオ局リストをセットアップ",
+        guide_step1_title: "プリセットをダウンロード",
+        guide_step1_desc: "上記からお好みの国・言語を選び、「JSONダウンロード」をクリックして保存します。",
+        guide_step2_title: "右クリックでメニューを開く",
+        guide_step2_desc: "reidioアプリを開き、ラジオ局リスト上で右クリックして「電台設定をインポート」を選択します。",
+        guide_step3_title: "インポート完了",
+        guide_step3_desc: "ダウンロードした.jsonファイルを選択すると、自動でリストに追加され、すぐに再生できます！",
+        modal_title_suffix: " - 収録局一覧",
+        modal_loading: "ラジオ局リストを読み込み中...",
+        modal_empty: "ラジオ局情報がありません",
+        modal_error: "読み込みに失敗しました。JSONファイルを直接ダウンロードしてご確認ください。",
+        footer_tagline: "reidio · ミニマルなデスクトップラジオ＆ローカルAIコンパニオン",
+        footer_credit: 'ラジオデータ提供：<a href="https://www.radio-browser.info/" target="_blank">Radio Browser</a> · オープンソース（<a href="https://github.com/reidio-app" target="_blank">GitHub</a>）'
+      }
+    };
+
+    let currentLang = 'zh-CN';
+
+    function setLanguage(lang) {
+      if (!I18N[lang]) lang = 'zh-CN';
+      currentLang = lang;
+      localStorage.setItem('reidio_lang', lang);
+      document.documentElement.lang = lang;
+      
+      const select = document.getElementById('langSelect');
+      if (select) select.value = lang;
+
+      const dict = I18N[lang];
+      document.title = dict.page_title;
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) metaDesc.setAttribute('content', dict.page_desc);
+
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key] !== undefined) {
+          if (key === 'footer_credit') {
+            el.innerHTML = dict[key];
+          } else {
+            el.textContent = dict[key];
+          }
+        }
+      });
+    }
+
+    // Auto detect language on load
+    function initLanguage() {
+      const savedLang = localStorage.getItem('reidio_lang');
+      if (savedLang && I18N[savedLang]) {
+        setLanguage(savedLang);
+        return;
+      }
+      const navLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+      if (navLang.startsWith('ja')) {
+        setLanguage('ja');
+      } else if (navLang.startsWith('zh')) {
+        setLanguage('zh-CN');
+      } else {
+        setLanguage('en');
+      }
+    }
+
     // Category Filter
     function filterCategory(cat, btn) {
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -767,13 +1058,15 @@
     }
 
     // Station Preview Modal
-    async function previewPreset(url, title) {
+    async function previewPreset(url, titleKey) {
       const modal = document.getElementById('previewModal');
       const modalTitle = document.getElementById('modalTitle');
       const modalBody = document.getElementById('modalBody');
 
-      modalTitle.innerText = `${title} - 包含电台`;
-      modalBody.innerHTML = '<p style="color: var(--text-secondary); text-align: center; padding: 20px;">正在加载电台列表...</p>';
+      const dict = I18N[currentLang] || I18N['zh-CN'];
+      const baseTitle = dict[titleKey] || titleKey;
+      modalTitle.innerText = `${baseTitle}${dict.modal_title_suffix}`;
+      modalBody.innerHTML = `<p style="color: var(--text-secondary); text-align: center; padding: 20px;">${dict.modal_loading}</p>`;
       modal.classList.add('show');
 
       try {
@@ -791,9 +1084,9 @@
             </div>
           `;
         });
-        modalBody.innerHTML = html || '<p style="text-align: center; color: var(--text-secondary);">暂无电台信息</p>';
+        modalBody.innerHTML = html || `<p style="text-align: center; color: var(--text-secondary);">${dict.modal_empty}</p>`;
       } catch (e) {
-        modalBody.innerHTML = '<p style="text-align: center; color: #ef4444; padding: 20px;">加载预览失败，请直接下载 JSON 查看。</p>';
+        modalBody.innerHTML = `<p style="text-align: center; color: #ef4444; padding: 20px;">${dict.modal_error}</p>`;
       }
     }
 
@@ -810,6 +1103,26 @@
       if (!str) return '';
       return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
     }
+
+    // Fetch and display app launch count
+    async function loadLaunchCount() {
+      try {
+        const res = await fetch('https://abacus.jasoncameron.dev/get/reidio-app/app-launches');
+        const data = await res.json();
+        if (data && typeof data.value === 'number') {
+          const countElem = document.getElementById('launchCount');
+          const badgeElem = document.getElementById('statBadge');
+          countElem.innerText = data.value.toLocaleString();
+          badgeElem.style.display = 'inline-flex';
+        }
+      } catch (e) {
+        console.warn('获取累计启动次数失败:', e);
+      }
+    }
+
+    // Init
+    initLanguage();
+    loadLaunchCount();
   </script>
 </body>
 </html>
