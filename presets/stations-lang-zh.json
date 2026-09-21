@@ -1,0 +1,337 @@
+[
+  {
+    "id": "station-951b325b-5b78-45ef-bebf-88f9a0f6c250",
+    "name": "华语金曲500首",
+    "desc": "China · golden music · UNKNOWN ",
+    "url": "http://ls.qingting.fm/live/3412131.m3u8?bitrate=64",
+    "category": "Chinese",
+    "homepage": "https://m.qingting.fm/"
+  },
+  {
+    "id": "station-2bf82625-6e78-445d-afff-e51e53c369a9",
+    "name": "CCTV-13新闻伴音",
+    "desc": "China · tv · UNKNOWN ",
+    "url": "https://piccpndali.v.myalicdn.com/audio/cctv13_2.m3u8",
+    "category": "Chinese",
+    "homepage": "https://www.cctv.com/"
+  },
+  {
+    "id": "station-dc722c5e-21a0-49be-8687-474638c95ca7",
+    "name": "凤凰卫视资讯台",
+    "desc": "China · news · UNKNOWN ",
+    "url": "http://playtv-live.ifeng.com/live/06OLEEWQKN4_audio.m3u8",
+    "category": "Chinese",
+    "favicon": "http://d.ifengimg.com/w250_h160_q90_webp/x0.ifengimg.com/ucms/2021_23/4F53E3FD6DBDAF0374F35223C9F6316706F6A08F_size23_w250_h160.jpg",
+    "homepage": "https://www.ifeng.com/"
+  },
+  {
+    "id": "station-24711f7f-8ff5-4141-8e0f-ab17f3da1b89",
+    "name": "怀集音乐之声",
+    "desc": "China · music · MP3 ",
+    "url": "https://lhttp.qingting.fm/live/4804/64k.mp3",
+    "category": "Chinese",
+    "favicon": "http://www.hj0758.cn/favicon.ico",
+    "homepage": "http://www.hj0758.cn/"
+  },
+  {
+    "id": "station-835070cd-bf45-4e48-88a4-e9f9a0d7dd9e",
+    "name": "CNR-1 中国之声",
+    "desc": "China · news · MP3 ",
+    "url": "https://lhttp.qtfm.cn/live/15318317/64k.mp3",
+    "category": "Chinese",
+    "homepage": "http://www.cnr.cn/"
+  },
+  {
+    "id": "station-431eb0c9-c84c-11e8-a54a-52543be04c81",
+    "name": "CNR-2 经济之声",
+    "desc": "China · economic, news · UNKNOWN ",
+    "url": "http://ngcdn002.cnr.cn/live/jjzs/index.m3u8",
+    "category": "Chinese",
+    "homepage": "http://www.cnr.cn/"
+  },
+  {
+    "id": "station-ab0cc7f6-df03-4923-ac83-f4a7d8c55916",
+    "name": "国际新闻",
+    "desc": "China · information, news · MP3 ",
+    "url": "https://lhttp.qtfm.cn/live/20500172/64k.mp3",
+    "category": "Chinese",
+    "favicon": "https://pic.qtfm.cn/sso/48/1678171152584_a6BwhQSVz.png",
+    "homepage": "http://www.ajmide.com/"
+  },
+  {
+    "id": "station-94de57d1-542a-46b8-8e18-d97517d93f99",
+    "name": "清晨音乐台",
+    "desc": "China · music, pop music · MP3 ",
+    "url": "http://lhttp.qingting.fm/live/4915/64k.mp3",
+    "category": "Chinese",
+    "favicon": "https://h5.sinaimg.cn/m/weibo-lite/appicon.png",
+    "homepage": "https://m.weibo.cn/u/2022851417"
+  },
+  {
+    "id": "station-815f20d0-3ecd-49d2-8449-9725e82b5f64",
+    "name": "500首华语经典",
+    "desc": "China · music, oldies · MP3 ",
+    "url": "https://lhttp.qtfm.cn/live/5022308/64k.mp3",
+    "category": "Chinese",
+    "homepage": "https://www.qingting.fm/radios/5022308"
+  },
+  {
+    "id": "station-96b88cb2-76a4-43fb-9257-e791103f5fa8",
+    "name": "臺北電台",
+    "desc": "Taiwan, Republic Of China · news, public radio · AAC 322k",
+    "url": "https://stream.ginnet.cloud/live0130lo-yfyo/_definst_/fm/playlist.m3u8",
+    "category": "Chinese",
+    "favicon": "https://liveonlineradio.net/wp-content/uploads/2021/09/radio-taipei-93.1-fm-220x108.jpg",
+    "homepage": "http://www.radio.gov.taipei/"
+  },
+  {
+    "id": "station-4a953750-49f8-46bb-a488-0e428cd7c232",
+    "name": "CNR-1 中国之声",
+    "desc": "China · information, news · UNKNOWN 352k",
+    "url": "http://zbbf2.ahbztv.com/live/4f3.m3u8",
+    "category": "Chinese",
+    "homepage": "http://www.cnr.cn/"
+  },
+  {
+    "id": "station-31710261-0b76-11e9-a80b-52543be04c81",
+    "name": "YES 933 Radio",
+    "desc": "Singapore · AAC+ 48k",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/YES933AAC.aac",
+    "category": "Chinese",
+    "favicon": "http://www.meradio.sg/static/apple-icon-120x120.png",
+    "homepage": "http://www.meradio.sg/radio/yes-933"
+  },
+  {
+    "id": "station-de4271e4-74cf-4ffe-a7cf-15a11f71530f",
+    "name": "Classical 古典音樂台 FM 97.7",
+    "desc": "Taiwan, Republic Of China · classical music · MP3 192k",
+    "url": "http://59.120.88.155:8000/live.mp3",
+    "category": "Chinese",
+    "homepage": "http://www.family977.com.tw/index.php"
+  },
+  {
+    "id": "station-28c73396-f7ea-49cf-a201-146bf29b2348",
+    "name": "CRI中文环球广播·CRI chinese service",
+    "desc": "China · international, music · UNKNOWN ",
+    "url": "http://sk.cri.cn/hyhq.m3u8",
+    "category": "Chinese",
+    "homepage": "http://chinese.cri.cn/radio/hyhq/index.html"
+  },
+  {
+    "id": "station-fff132f1-0b79-11e9-a80b-52543be04c81",
+    "name": "Love 972 Radio",
+    "desc": "Singapore · AAC+ 48k",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/LOVE972FMAAC.aac",
+    "category": "Chinese",
+    "favicon": "http://www.meradio.sg/static/apple-icon-120x120.png",
+    "homepage": "http://www.meradio.sg/radio/love-972"
+  },
+  {
+    "id": "station-e4599290-f353-478d-b920-7e057d049dd5",
+    "name": "AsiaFM高清音乐台",
+    "desc": "China · 192kbps, hd · AAC+ 96k",
+    "url": "http://asiafm.hk:8000/asiahd",
+    "category": "Chinese",
+    "homepage": "http://www.asiafm.net/index.php#page1"
+  },
+  {
+    "id": "station-8a9c4662-0b7c-11e9-a80b-52543be04c81",
+    "name": "Jia 883 Radio",
+    "desc": "Singapore · AAC+ 96k",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/883JIAAAC.aac",
+    "category": "Chinese",
+    "homepage": "http://www.883jia.com.sg/"
+  },
+  {
+    "id": "station-7478cbd8-9217-4e39-8da7-a0d4385685ce",
+    "name": "CCTV-4中文国际伴音",
+    "desc": "China · news · UNKNOWN ",
+    "url": "https://piccpndali.v.myalicdn.com/audio/cctv4_2.m3u8",
+    "category": "Chinese",
+    "homepage": "https://www.cctv.com/"
+  },
+  {
+    "id": "station-0863581e-013e-465b-8db6-205bb29c217d",
+    "name": "CCTV-13 新闻（伴音）",
+    "desc": "China · cctv, 国家台 · UNKNOWN ",
+    "url": "https://piccpndali.v.myalicdn.com/audio/cctv13_2.m3u8",
+    "category": "Chinese",
+    "homepage": "https://superradio.cc/"
+  },
+  {
+    "id": "station-ba8cf3a2-70c7-4567-9d9f-e6d028aecb2a",
+    "name": "两广之声音乐台",
+    "desc": "China · internet radio, oldies · MP3 ",
+    "url": "https://lhttp.qtfm.cn/live/20500149/64k.mp3",
+    "category": "Chinese",
+    "favicon": "https://pic.qtfm.cn/2022/0619/20220619063631.jpeg",
+    "homepage": "https://www.qingting.fm/radios/20500149/"
+  },
+  {
+    "id": "station-72fa86ec-a990-43d6-98f8-ecc6236ea61e",
+    "name": "雨声轻音乐",
+    "desc": "China · ambient, instrumental · MP3 ",
+    "url": "https://stream.zeno.fm/689zc32y4x8uv",
+    "category": "Chinese",
+    "favicon": "https://zeno.fm/favicon.ico",
+    "homepage": "https://zeno.fm/radio/rain-songs/"
+  },
+  {
+    "id": "station-06993d81-0b79-11e9-a80b-52543be04c81",
+    "name": "UFM 100.3 Radio",
+    "desc": "Singapore · AAC+ 64k",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/UFM_1003AAC.aac",
+    "category": "Chinese",
+    "homepage": "http://www.ufm1003.sg/"
+  },
+  {
+    "id": "station-0ab8efd5-9110-4fc0-a961-f397d00ea93f",
+    "name": "德云社相声合集",
+    "desc": "China · crosstalk, entertainment · MP3 ",
+    "url": "https://stream.zeno.fm/yqawwmweq8mtv",
+    "category": "Chinese",
+    "homepage": "https://zeno.fm/radio/de-yun-she-xiang-sheng-he-ji/"
+  },
+  {
+    "id": "station-94b627b7-7b61-4478-b797-bcb21973c4bf",
+    "name": "AsiaFM亚洲经典台",
+    "desc": "China · classic hits, hd · AAC+ 128k",
+    "url": "http://goldfm.cn:8000/goldfm",
+    "category": "Chinese",
+    "favicon": "http://pic.qtfm.cn/2022/0712/20220712122112.jpeg!200",
+    "homepage": "http://www.asiafm.net/index.php#page1"
+  },
+  {
+    "id": "station-7036e1ed-0b7d-11e9-a80b-52543be04c81",
+    "name": "Capital 958 Radio",
+    "desc": "Singapore · AAC+ 48k",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/CAPITAL958FMAAC.aac",
+    "category": "Chinese",
+    "favicon": "http://www.meradio.sg/static/apple-icon-120x120.png",
+    "homepage": "http://www.meradio.sg/radio/capital-958"
+  },
+  {
+    "id": "station-44cea5a0-7466-11e9-af37-52543be04c81",
+    "name": "第一财经",
+    "desc": "China · economic news, economics · MP3 ",
+    "url": "http://lhttp.qingting.fm/live/276/64k.mp3",
+    "category": "Chinese",
+    "homepage": "https://m.yicai.com/"
+  },
+  {
+    "id": "station-eea091f2-750b-11e9-af37-52543be04c81",
+    "name": "上海新闻广播",
+    "desc": "China · news, talk · MP3 ",
+    "url": "http://lhttp.qingting.fm/live/270/64k.mp3",
+    "category": "Chinese",
+    "homepage": "https://www.smg.cn/review/index.html"
+  },
+  {
+    "id": "station-f3638a83-ac26-4b05-b0b9-0245b023ae0f",
+    "name": "AsiaFM 亚洲粤语台",
+    "desc": "China · 地方台, 粤语 · MP3 ",
+    "url": "https://lhttp.qtfm.cn/live/15318569/64k.mp3",
+    "category": "Chinese",
+    "homepage": "https://superradio.cc/"
+  },
+  {
+    "id": "station-3f6d52c1-9373-4fd2-8bef-5dd476e4e7d2",
+    "name": "新闻联播",
+    "desc": "China · news · MP3 64k",
+    "url": "https://rfienchinois64k.ice.infomaniak.ch//rfienchinois-64.mp3",
+    "category": "Chinese",
+    "favicon": "https://www.rfi.fr/apple-touch-icon.png",
+    "homepage": "https://www.rfi.fr/cn/"
+  },
+  {
+    "id": "station-948c6e7c-aee1-4d50-87bf-ce338e38e311",
+    "name": "CCTV-2财经伴音",
+    "desc": "China · tv · UNKNOWN ",
+    "url": "https://piccpndali.v.myalicdn.com/audio/cctv2_2.m3u8",
+    "category": "Chinese",
+    "homepage": "https://www.cctv.com/"
+  },
+  {
+    "id": "station-e2fe33ad-87a6-4bca-bb2a-f051212c82c2",
+    "name": "Chinese Music World",
+    "desc": "China · chinese, classical · OGG ",
+    "url": "http://radio.chinesemusicworld.com/chinesemusic.ogg",
+    "category": "Chinese",
+    "homepage": "https://chinesemusicworld.com/"
+  },
+  {
+    "id": "station-38ee7cba-f235-4e89-ba9a-60e588af2b82",
+    "name": "凤凰卫视中文台",
+    "desc": "Hong Kong · news, talk · UNKNOWN ",
+    "url": "http://playtv-live.ifeng.com/live/06OLEGEGM4G_audio.m3u8",
+    "category": "Chinese",
+    "favicon": "https://y1.ifengimg.com/index/72x72_2520ifeng.png",
+    "homepage": "https://www.ifeng.com/"
+  },
+  {
+    "id": "station-ef678e2d-beea-40a2-b152-f73d57de4f52",
+    "name": "CRI环球资迅广播",
+    "desc": "China · 905fm, china · UNKNOWN ",
+    "url": "https://sk.cri.cn/905.m3u8",
+    "category": "Chinese",
+    "favicon": "https://newsradio.cri.cn/favicon.ico",
+    "homepage": "https://newsradio.cri.cn/"
+  },
+  {
+    "id": "station-288d0219-4d05-4f5d-8b1d-671bb6c51733",
+    "name": "安徽小说评书广播",
+    "desc": "China · storytelling · MP3 ",
+    "url": "https://lhttp.qtfm.cn/live/1951/64k.mp3",
+    "category": "Chinese",
+    "homepage": "http://www.ahrtv.cn/"
+  },
+  {
+    "id": "station-abbee82e-0b7b-11e9-a80b-52543be04c81",
+    "name": "SPH 963 Radio",
+    "desc": "Singapore · AAC+ 64k",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/HAO_963AAC.aac",
+    "category": "Chinese",
+    "homepage": "http://www.963haofm.sg/"
+  },
+  {
+    "id": "station-8e8f1791-1408-49f7-a4fb-b7c7e2fb3636",
+    "name": "加拿大中文电台FM.96.1",
+    "desc": "Canada · 96.1, 96.1 fm · AAC 48k",
+    "url": "https://5b2959fe11444.streamlock.net/radio/fm961.stream/playlist.m3u8",
+    "category": "Chinese",
+    "homepage": "http://www.am1470.com/home_c.php?1634199366"
+  },
+  {
+    "id": "station-7f0d6d5c-7707-4812-bbc1-a44eb9ccc74a",
+    "name": "怀旧音乐广播",
+    "desc": "China · 89.5, 895 · UNKNOWN ",
+    "url": "https://live.ximalaya.com/radio-first-page-app/live/2629/64.m3u8",
+    "category": "Chinese",
+    "homepage": "https://superradio.cc/"
+  },
+  {
+    "id": "station-14569b3b-271d-4a7c-a598-72323fa9469b",
+    "name": "Hit FM台北之音廣播",
+    "desc": "Taiwan, Republic Of China · music · UNKNOWN ",
+    "url": "http://202.39.43.67:1935/live/RA000036/chunklist.m3u8",
+    "category": "Chinese",
+    "favicon": "https://cooltv.top/logo/hitfmtw.webp",
+    "homepage": "https://www.hitoradio.com/newweb/onair.php"
+  },
+  {
+    "id": "station-9d277131-2267-46d4-ac53-eb46ed3d78e4",
+    "name": "CCTV-15音乐伴音",
+    "desc": "China · music · UNKNOWN ",
+    "url": "https://piccpndali.v.myalicdn.com/audio/cctv15_2.m3u8",
+    "category": "Chinese",
+    "homepage": "https://www.cctv.com/"
+  },
+  {
+    "id": "station-9d7f295c-ba89-4903-af7e-0e52b4a2051c",
+    "name": "BBN 中文",
+    "desc": "China · bible · AAC 64k",
+    "url": "https://streams.radiomast.io/ce298b32-8776-4192-9900-092f44b63e7f",
+    "category": "Chinese",
+    "homepage": "https://bbn1.bbnradio.org/"
+  }
+]

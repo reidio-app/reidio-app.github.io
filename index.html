@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>reidio - 极简网络电台播放器与电台配置预设</title>
+  <meta name="description" content="reidio 是一款极简高颜值的桌面网络电台播放器，内置 AI 实时字幕转录。在此免费下载各国各语种预制电台配置文件。">
+  <link rel="icon" type="image/png" href="icon.png">
+  <style>
+    :root {
+      --bg-primary: #0f1117;
+      --bg-secondary: #181b24;
+      --bg-card: rgba(28, 33, 46, 0.7);
+      --bg-card-hover: rgba(38, 45, 62, 0.85);
+      --border: rgba(255, 255, 255, 0.08);
+      --border-focus: rgba(99, 102, 241, 0.4);
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --accent: #6366f1;
+      --accent-hover: #4f46e5;
+      --accent-glow: rgba(99, 102, 241, 0.25);
+      --success: #10b981;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: radial-gradient(circle at 50% 0%, #1e1b4b 0%, var(--bg-primary) 60%);
+      background-attachment: fixed;
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+      width: 100%;
+    }
+
+    /* Header */
+    header {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(15, 17, 23, 0.8);
+    }
+
+    .nav-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-primary);
+    }
+
+    .brand img {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px var(--accent-glow);
+    }
+
+    .brand-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--text-primary);
+    }
+
+    .btn-sm {
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      background: var(--accent);
+      color: white !important;
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-sm:hover {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 70px 0 50px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(99, 102, 241, 0.12);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      padding: 6px 14px;
+      border-radius: 100px;
+      font-size: 0.85rem;
+      color: #a5b4fc;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      max-width: 680px;
+      margin: 0 auto 36px;
+    }
+
+    .features-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .feature-pill {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: #cbd5e1;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Presets Section */
+    .section-title-wrap {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .section-title-wrap h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .section-title-wrap p {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+    }
+
+    .filter-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      padding: 8px 20px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .tab-btn:hover {
+      color: var(--text-primary);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .tab-btn.active {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
+      box-shadow: 0 4px 14px var(--accent-glow);
+    }
+
+    .presets-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 22px;
+      margin-bottom: 60px;
+    }
+
+    .preset-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      backdrop-filter: blur(8px);
+      transition: all 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .preset-card:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--border-focus);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+    }
+
+    .preset-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+
+    .preset-icon {
+      font-size: 2.2rem;
+      line-height: 1;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .preset-meta h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .preset-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    .preset-desc {
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+      margin-bottom: 22px;
+      flex-grow: 1;
+    }
+
+    .card-actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn-download {
+      flex: 1;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.2s;
+    }
+
+    .btn-download:hover {
+      background: var(--accent-hover);
+      box-shadow: 0 4px 12px var(--accent-glow);
+    }
+
+    .btn-preview {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid var(--border);
+      color: var(--text-primary);
+      padding: 10px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+
+    .btn-preview:hover {
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    /* Guide Section */
+    .guide-section {
+      background: var(--bg-secondary);
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      padding: 40px;
+      margin-bottom: 70px;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .step-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      position: relative;
+    }
+
+    .step-number {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: white;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+
+    .step-item h4 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .step-item p {
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+    }
+
+    /* Modal */
+    .modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(6px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 200;
+      padding: 20px;
+    }
+
+    .modal-backdrop.show {
+      display: flex;
+    }
+
+    .modal {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      max-width: 600px;
+      width: 100%;
+      max-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .modal-header {
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .modal-header h3 {
+      font-size: 1.25rem;
+    }
+
+    .btn-close {
+      background: transparent;
+      border: none;
+      color: var(--text-secondary);
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 0 4px;
+      line-height: 1;
+    }
+
+    .modal-body {
+      padding: 20px 24px;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    .station-list-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .station-list-item:last-child {
+      border-bottom: none;
+    }
+
+    .station-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .station-tag {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 36px 0;
+      margin-top: auto;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #a5b4fc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      .presets-grid {
+        grid-template-columns: 1fr;
+      }
+      .guide-section {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-wrap">
+      <a href="#" class="brand">
+        <img src="icon.png" alt="reidio icon">
+        <span class="brand-title">reidio</span>
+      </a>
+      <div class="nav-links">
+        <a href="#presets">预制电台</a>
+        <a href="#guide">使用教程</a>
+        <a href="https://github.com/reidio-app" target="_blank" class="btn-sm">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="badge">
+        <span>✨</span> 极简高颜值桌面广播电台播放器
+      </div>
+      <h1>全球声音，一触即达</h1>
+      <p>reidio 拥有无干扰极简播放条设计，内置本地 Whisper AI 实时语音转录与字幕。在这里下载各国家与语种的精选电台预设包，轻松导入即可开始收听。</p>
+      <div class="features-row">
+        <div class="feature-pill">📻 极简桌面悬浮/Dock条</div>
+        <div class="feature-pill">🤖 Whisper 本地 AI 实时字幕</div>
+        <div class="feature-pill">🌍 数万全球高清流媒体电台</div>
+        <div class="feature-pill">⚡ 毫秒级快速导入与导出</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Presets Section -->
+  <section class="container" id="presets">
+    <div class="section-title-wrap">
+      <h2>精选电台配置文件</h2>
+      <p>点击即可直接下载 JSON 配置文件，支持导入至 reidio 客户端</p>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="filter-tabs">
+      <button class="tab-btn active" onclick="filterCategory('all', this)">全部配置</button>
+      <button class="tab-btn" onclick="filterCategory('country', this)">按国家 / 地区</button>
+      <button class="tab-btn" onclick="filterCategory('language', this)">按广播语种</button>
+    </div>
+
+    <!-- Grid -->
+    <div class="presets-grid" id="presetsGrid">
+      
+      <!-- Top Global -->
+      <div class="preset-card" data-category="country">
+        <div>
+          <div class="preset-header">
+            <div class="preset-icon">🌟</div>
+            <div class="preset-meta">
+              <h3>全球收听精选</h3>
+              <span class="preset-badge">40 个电台</span>
+            </div>
+          </div>
+          <p class="preset-desc">精选 Radio Browser 全球点赞与收听率最高的经典电台，涵盖流行、爵士、轻音乐与新闻。</p>
+        </div>
+        <div class="card-actions">
+          <button class="btn-preview" onclick="previewPreset('presets/stations-top-global.json', '全球收听精选')">预览</button>
+          <a href="presets/stations-top-global.json" download="stations-top-global.json" class="btn-download">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+            下载 JSON
+          </a>
+        </div>
+      </div>
+
+      <!-- China -->
+      <div class="preset-card" data-category="country">
+        <div>
+          <div class="preset-header">
+            <div class="preset-icon">🇨🇳</div>
+            <div class="preset-meta">
+              <h3>中国精选电台</h3>
+              <span class="preset-badge">35 个电台</span>
+            </div>
+          </div>
+          <p class="preset-desc">涵盖央广中国之声、音乐之声、动感101、凤凰资讯以及各大省市优质广播电台与金曲频道。</p>
+        </div>
+        <div class="card-actions">
+          <button class="btn-preview" onclick="previewPreset('presets/stations-country-cn.json', '中国精选电台')">预览</button>
+          <a href="presets/stations-country-cn.json" download="stations-country-cn.json" class="btn-download">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+            下载 JSON
+          </a>
+        </div>
+      </div>
+
+      <!-- United States -->
+      <div class="preset-card" data-category="country">
+        <div>
+          <div class="preset-header">
+            <div class="preset-icon">🇺🇸</div>
+            <div class="preset-meta">
+              <h3>美国精选电台</h3>
+              <span class="preset-badge">35 个电台</span>
+            </div>
+          </div>
+          <p class="preset-desc">包含 NPR 著名新闻台、纽约 WNYC、西雅图独立音乐台 KEXP、优质爵士台与经典摇滚频道。</p>
+        </div>
+        <div class="card-actions">
+          <button class="btn-preview" onclick="previewPreset('presets/stations-country-us.json', '美国精选电台')">预览</button>
+          <a href="presets/stations-country-us.json" download="stations-country-us.json" class="btn-download">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+            下载 JSON
+          </a>
+        </div>
+      </div>
+
+      <!-- United Kingdom -->
+      <div class="preset-card" data-category="country">
+        <div>
+          <div class="preset-header">
+            <div class="preset-icon">🇬🇧</div>
+            <div class="preset-meta">
+              <h3>英国精选电台</h3>
+              <span class="preset-badge">30 个电台</span>
+            </div>
+          </div>
+          <p class="preset-desc">汇聚 BBC Radio 全系列、Capital FM 流行音乐榜、Classic FM 古典音乐与伦敦资讯台。</p>
+        </div>
+        <div class="card-actions">
+          <button class="btn-preview" onclick="previewPreset('presets/stations-country-uk.json', '英国精选电台')">预览</button>
+          <a href="presets/stations-country-uk.json" download="stations-country-uk.json" class="btn-download">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+            下载 JSON
+          </a>
+        </div>
+      </div>
+
+      <!-- Japan -->
+      <div class="preset-card" data-category="country">
+        <div>
+          <div class="preset-header">
+            <div class="preset-icon">🇯🇵</div>
+            <div class="preset-meta">
+              <h3>日本精选电台</h3>
+              <span class="preset-badge">30 个电台</span>
+            </div>
+          </div>
+          <p class="preset-desc">NHK 广播、Tokyo FM、J-Pop 流行樱花电台、ACG 动漫原声与经典日本爵士乐。</p>
+        </div>
+        <div class="card-actions">
+          <button class="btn-preview" onclick="previewPreset('presets/stations-country-jp.json', '日本精选电台')">预览</button>
+          <a href="presets/stations-country-jp.json" download="stations-country-jp.json" class="btn-download">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+            下载 JSON
+          </a>
+        </div>
+      </div>
+
+      <!-- English Language -->
+      <div class="preset-card" data-category="language">
+        <div>
+          <div class="preset-header">
+            <div class="preset-icon">💬</div>
+            <div class="preset-meta">
+              <h3>英语综合精选</h3>
+              <span class="preset-badge">40 个电台</span>
+            </div>
+          </div>
+          <p class="preset-desc">国际主流英语新闻、英语脱口秀、流行金曲与故事访谈，极度适合配合 Whisper AI 练习听力。</p>
+        </div>
+        <div class="card-actions">
+          <button class="btn-preview" onclick="previewPreset('presets/stations-lang-en.json', '英语综合精选')">预览</button>
+          <a href="presets/stations-lang-en.json" download="stations-lang-en.json" class="btn-download">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+            下载 JSON
+          </a>
+        </div>
+      </div>
+
+      <!-- Chinese Language -->
+      <div class="preset-card" data-category="language">
+        <div>
+          <div class="preset-header">
+            <div class="preset-icon">🀄</div>
+            <div class="preset-meta">
+              <h3>中文综合精选</h3>
+              <span class="preset-badge">40 个电台</span>
+            </div>
+          </div>
+          <p class="preset-desc">华语流行经典、两岸三地音乐电台、民谣清唱、传统相声与有声广播综合精选集。</p>
+        </div>
+        <div class="card-actions">
+          <button class="btn-preview" onclick="previewPreset('presets/stations-lang-zh.json', '中文综合精选')">预览</button>
+          <a href="presets/stations-lang-zh.json" download="stations-lang-zh.json" class="btn-download">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+            下载 JSON
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Guide Section -->
+  <section class="container" id="guide">
+    <div class="guide-section">
+      <div class="section-title-wrap" style="margin-bottom: 0;">
+        <h2>3 步导入电台到 reidio</h2>
+        <p>只需几秒钟，快速填充你的电台列表</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-item">
+          <div class="step-number">1</div>
+          <h4>下载预设包</h4>
+          <p>在上方选择你喜欢的国家或语种包，点击「下载 JSON」保存到电脑本地。</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">2</div>
+          <h4>右键打开菜单</h4>
+          <p>打开 reidio 客户端，在电台列表区域点击鼠标右键，选择「导入电台配置」。</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">3</div>
+          <h4>完成导入</h4>
+          <p>选择刚才下载的 <code>.json</code> 文件，系统将自动合并到你的电台列表，即刻畅听！</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preview Modal -->
+  <div class="modal-backdrop" id="previewModal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="modalTitle">电台列表预览</h3>
+        <button class="btn-close" onclick="closeModal()">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <p style="color: var(--text-secondary); text-align: center;">加载中...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p style="margin-bottom: 8px;">reidio · 极简网络电台 & 本地 AI 伴侣</p>
+      <p style="font-size: 0.82rem; color: #64748b;">
+        电台数据由 <a href="https://www.radio-browser.info/" target="_blank">Radio Browser</a> 提供支持 · 
+        开源项目托管于 <a href="https://github.com/reidio-app" target="_blank">GitHub</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Category Filter
+    function filterCategory(cat, btn) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cards = document.querySelectorAll('.preset-card');
+      cards.forEach(card => {
+        if (cat === 'all' || card.dataset.category === cat) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Station Preview Modal
+    async function previewPreset(url, title) {
+      const modal = document.getElementById('previewModal');
+      const modalTitle = document.getElementById('modalTitle');
+      const modalBody = document.getElementById('modalBody');
+
+      modalTitle.innerText = `${title} - 包含电台`;
+      modalBody.innerHTML = '<p style="color: var(--text-secondary); text-align: center; padding: 20px;">正在加载电台列表...</p>';
+      modal.classList.add('show');
+
+      try {
+        const resp = await fetch(url);
+        const data = await resp.json();
+        
+        let html = '';
+        data.forEach(st => {
+          html += `
+            <div class="station-list-item">
+              <div>
+                <div class="station-name">${escapeHtml(st.name)}</div>
+                <div class="station-tag">${escapeHtml(st.desc || '')}</div>
+              </div>
+            </div>
+          `;
+        });
+        modalBody.innerHTML = html || '<p style="text-align: center; color: var(--text-secondary);">暂无电台信息</p>';
+      } catch (e) {
+        modalBody.innerHTML = '<p style="text-align: center; color: #ef4444; padding: 20px;">加载预览失败，请直接下载 JSON 查看。</p>';
+      }
+    }
+
+    function closeModal() {
+      document.getElementById('previewModal').classList.remove('show');
+    }
+
+    // Close on backdrop click
+    document.getElementById('previewModal').addEventListener('click', function(e) {
+      if (e.target === this) closeModal();
+    });
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    }
+  </script>
+</body>
+</html>

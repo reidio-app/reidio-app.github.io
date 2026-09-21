@@ -1,0 +1,356 @@
+[
+  {
+    "id": "station-78012206-1aa1-11e9-a80b-52543be04c81",
+    "name": "MANGORADIO",
+    "desc": "Germany · music, variety · MP3 128k",
+    "url": "https://mangoradio.stream.laut.fm/mangoradio",
+    "category": "Featured",
+    "favicon": "https://mangoradio.de/wp-content/uploads/cropped-Logo-192x192.webp",
+    "homepage": "https://mangoradio.de/"
+  },
+  {
+    "id": "station-962cc6df-0601-11e8-ae97-52543be04c81",
+    "name": "Dance Wave!",
+    "desc": "Hungary · club dance electronic house trance · MP3 128k",
+    "url": "https://dancewave.online/dance.mp3",
+    "category": "Featured",
+    "favicon": "https://dancewave.online/dw_logo.png",
+    "homepage": "https://dancewave.online/"
+  },
+  {
+    "id": "station-f592bcd7-c052-11e9-8502-52543be04c81",
+    "name": "REYFM - #original",
+    "desc": "#original, fm · MP3 192k",
+    "url": "https://listen.reyfm.de/original_192kbps.mp3",
+    "category": "Featured",
+    "favicon": "https://www.reyfm.de/icon.png",
+    "homepage": "https://www.reyfm.de/"
+  },
+  {
+    "id": "station-9617a958-0601-11e8-ae97-52543be04c81",
+    "name": "Radio Paradise Main Mix (EU) 320k AAC",
+    "desc": "The United States Of America · california, eclectic · AAC 320k",
+    "url": "http://stream-uk1.radioparadise.com/aac-320",
+    "category": "Featured",
+    "favicon": "https://radioparadise.com/apple-touch-icon.png",
+    "homepage": "https://radioparadise.com/"
+  },
+  {
+    "id": "station-d1a54d2e-623e-4970-ab11-35f7b56c5ec3",
+    "name": "Classic Vinyl HD",
+    "desc": "The United States Of America · 1930, 1940 · MP3 320k",
+    "url": "https://icecast.walmradio.com:8443/classic",
+    "category": "Featured",
+    "favicon": "https://icecast.walmradio.com:8443/classic.jpg",
+    "homepage": "https://walmradio.com/classic"
+  },
+  {
+    "id": "station-ea8059be-d119-4de3-b27b-0d9bd6aedb17",
+    "name": "Adroit Jazz Underground",
+    "desc": "The United States Of America · avant-garde, bebop · MP3 320k",
+    "url": "https://icecast.walmradio.com:8443/jazz",
+    "category": "Featured",
+    "favicon": "https://icecast.walmradio.com:8443/jazz.jpg",
+    "homepage": "https://walmradio.com/jazz"
+  },
+  {
+    "id": "station-6eff3484-4ab4-4d36-bf27-9172c5aac15c",
+    "name": "Christmas Vinyl HD",
+    "desc": "The United States Of America · christian, christmas · MP3 320k",
+    "url": "https://icecast.walmradio.com:8443/christmas",
+    "category": "Featured",
+    "favicon": "https://icecast.walmradio.com:8443/christmas.png",
+    "homepage": "https://walmradio.com/christmas"
+  },
+  {
+    "id": "station-348dfc58-ce8c-413b-b264-0384f816344b",
+    "name": "WALM HD",
+    "desc": "The United States Of America · christian, christian music · MP3 320k",
+    "url": "https://icecast.walmradio.com:8443/walm",
+    "category": "Featured",
+    "favicon": "https://icecast.walmradio.com:8443/walm.jpg",
+    "homepage": "https://walmradio.com/walm"
+  },
+  {
+    "id": "station-98adecf7-2683-4408-9be7-02d3f9098eb8",
+    "name": "BBC World Service",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · news, talk · MP3 56k",
+    "url": "http://stream.live.vc.bbcmedia.co.uk/bbc_world_service",
+    "category": "Featured",
+    "favicon": "http://cdn-profiles.tunein.com/s24948/images/logoq.jpg?t=1",
+    "homepage": "https://www.bbc.co.uk/programmes/w172xzjgf6lxp7y"
+  },
+  {
+    "id": "station-313046e3-b203-4b9d-bc3e-393da7d97126",
+    "name": "WALM - Old Time Radio",
+    "desc": "The United States Of America · 78, 78-rpm · MP3 64k",
+    "url": "https://icecast.walmradio.com:8443/otr",
+    "category": "Featured",
+    "favicon": "https://icecast.walmradio.com:8443/otr.jpg",
+    "homepage": "https://walmradio.com/otr"
+  },
+  {
+    "id": "station-c3357cf1-5108-11ea-b877-52543be04c81",
+    "name": "Iran International",
+    "desc": "news · MP3 ",
+    "url": "https://radio.iraninternational.app/iintl_c",
+    "category": "Featured",
+    "homepage": "https://iranintl.com/"
+  },
+  {
+    "id": "station-64bb1467-2585-4454-a96f-34cfbc864d41",
+    "name": "WALM 2 HD",
+    "desc": "The United States Of America · choral, christian · MP3 320k",
+    "url": "https://icecast.walmradio.com:8443/walm2",
+    "category": "Featured",
+    "favicon": "https://icecast.walmradio.com:8443/walm.jpg",
+    "homepage": "https://walmradio.com/walm2"
+  },
+  {
+    "id": "station-96494925-0601-11e8-ae97-52543be04c81",
+    "name": "RFE/RL Radio Farda",
+    "desc": "Czechia · music, news · MP3 ",
+    "url": "http://rfe21.akacast.akamaistream.net/7/751/437779/v1/ibb.akacast.akamaistream.net/rfe21",
+    "category": "Featured",
+    "favicon": "http://www.radiofarda.com//Content/responsive/RFE/img/webApp/favicon.ico",
+    "homepage": "http://www.radiofarda.com/"
+  },
+  {
+    "id": "station-5c6c092b-2b8b-4ac1-a8d0-090f87037fd9",
+    "name": "iraninternational",
+    "desc": "Islamic Republic Of Iran · iran, news · MP3 ",
+    "url": "https://radio.iraninternational.app/iintl_c",
+    "category": "Featured",
+    "favicon": "https://iranintl.com/favicon.ico",
+    "homepage": "https://iranintl.com/"
+  },
+  {
+    "id": "station-1cfb151d-a341-11e9-a787-52543be04c81",
+    "name": "France Info",
+    "desc": "France · MP3 128k",
+    "url": "http://direct.franceinfo.fr/live/franceinfo-midfi.mp3",
+    "category": "Featured",
+    "favicon": "https://www.francetvinfo.fr/assets/common/images/pwa/ios/120-5487caf3.png",
+    "homepage": "https://www.francetvinfo.fr/"
+  },
+  {
+    "id": "station-d28420a4-eccf-47a2-ace1-088c7e7cb7e0",
+    "name": "101 SMOOTH JAZZ",
+    "desc": "The United States Of America · easy listening, jazz · MP3 192k",
+    "url": "http://jking.cdnstream1.com/b22139_128mp3",
+    "category": "Featured",
+    "favicon": "http://101smoothjazz.com/favicon.ico",
+    "homepage": "http://101smoothjazz.com/"
+  },
+  {
+    "id": "station-960c2914-0601-11e8-ae97-52543be04c81",
+    "name": "RFI Afrique",
+    "desc": "France · africa, news · MP3 64k",
+    "url": "http://live02.rfi.fr/rfiafrique-64.mp3",
+    "category": "Featured",
+    "favicon": "http://www.rfi.fr/apple-touch-icon.png",
+    "homepage": "http://www.rfi.fr/"
+  },
+  {
+    "id": "station-9616a843-0601-11e8-ae97-52543be04c81",
+    "name": "Mosaique FM",
+    "desc": "Tunisia · MP3 90k",
+    "url": "http://radio.mosaiquefm.net:8000/mosalive",
+    "category": "Featured",
+    "homepage": "http://www.mosaiquefm.net/ar/"
+  },
+  {
+    "id": "station-7a3a3989-8f26-44f7-9ae5-fa91e5cf4f9d",
+    "name": "RMC FR",
+    "desc": "France · france, info · MP3 128k",
+    "url": "https://audio.bfmtv.com/rmcradio_128.mp3",
+    "category": "Featured",
+    "favicon": "https://i1.wp.com/www.mediasportif.fr/wp-content/uploads/2014/05/Radio-RMC.jpg",
+    "homepage": "https://rmc.bfmtv.com/"
+  },
+  {
+    "id": "station-2ce23ee2-95c5-407d-9df8-54c3cdde2825",
+    "name": "Adroit Jazz Underground HD Opus",
+    "desc": "The United States Of America · avant-garde, bebop · OGG 192k",
+    "url": "https://icecast.walmradio.com:8443/jazz_opus",
+    "category": "Featured",
+    "favicon": "https://icecast.walmradio.com:8443/jazz.jpg",
+    "homepage": "https://walmradio.com/jazz"
+  },
+  {
+    "id": "station-dcb4d366-5b06-4f4d-a5cb-0b81d1c09521",
+    "name": "parsa",
+    "desc": "Islamic Republic Of Iran · classical · MP3 64k",
+    "url": "http://parsa.icdndhcp.com:18000/stream",
+    "category": "Featured",
+    "favicon": "https://lh5.googleusercontent.com/proxy/25PMsUBa3Z6So8cdvAyZT7_93NyV26cJNuTTDY4xk6aJU1lcKPByf2C7o2HbrGrv-QxPvbI3dio2D39zYlgi1v6nLg",
+    "homepage": "http://radio.sarcheshmeh.us/parsa.html"
+  },
+  {
+    "id": "station-b6eedfc6-4a4b-4899-852f-03dd833f1f1b",
+    "name": "ایران‎  Radio Liberty (Iran) (official stream)",
+    "desc": "Islamic Republic Of Iran · MP3 ",
+    "url": "https://stream.radiojar.com/cp13r2cpn3quv",
+    "category": "Featured",
+    "favicon": "https://www.radiofarda.com/content/responsive/rfe/img/webapp/ico-128x128.png",
+    "homepage": "https://www.radiofarda.com/"
+  },
+  {
+    "id": "station-b96225b2-8536-4b9b-8add-03582fd2e6a2",
+    "name": "WALM 2 HD Opus",
+    "desc": "The United States Of America · choral, christian · OGG 192k",
+    "url": "https://icecast.walmradio.com:8443/walm2_opus",
+    "category": "Featured",
+    "favicon": "https://icecast.walmradio.com:8443/walm.jpg",
+    "homepage": "https://walmradio.com/walm2"
+  },
+  {
+    "id": "station-24e3676a-8de5-474c-8ed2-288fbb66d447",
+    "name": "Christmas Vinyl HD Opus",
+    "desc": "The United States Of America · christian, christmas · OGG 192k",
+    "url": "https://icecast.walmradio.com:8443/christmas_opus",
+    "category": "Featured",
+    "favicon": "https://icecast.walmradio.com:8443/christmas.jpg",
+    "homepage": "https://walmradio.com/christmas"
+  },
+  {
+    "id": "station-96102c22-0601-11e8-ae97-52543be04c81",
+    "name": "Jazz Radio Blues",
+    "desc": "France · blues, jazz · MP3 128k",
+    "url": "http://jazzblues.ice.infomaniak.ch/jazzblues-high.mp3",
+    "category": "Featured",
+    "favicon": "https://www.jazzradio.fr/apple-touch-icon-120x120.png",
+    "homepage": "http://www.jazzradio.fr/radio/webradio/3/blues"
+  },
+  {
+    "id": "station-399b7c2a-6680-11e8-b15b-52543be04c81",
+    "name": "RMF FM",
+    "desc": "Poland · fm, rmf · MP3 128k",
+    "url": "http://195.150.20.242:8000/rmf_fm",
+    "category": "Featured",
+    "favicon": "https://www.rmf.fm/assets/images/favicon/apple-icon-120x120.png?3",
+    "homepage": "https://www.rmf.fm/"
+  },
+  {
+    "id": "station-961949f3-0601-11e8-ae97-52543be04c81",
+    "name": "Hit FM (UKraine) - 128kb/s",
+    "desc": "Ukraine · dance, pop · MP3 128k",
+    "url": "http://195.95.206.17/HitFM",
+    "category": "Featured",
+    "favicon": "https://www.hitfm.ua/static/img/fav-icon/apple-icon-120x120.png",
+    "homepage": "http://www.hitfm.ua/"
+  },
+  {
+    "id": "station-31074f8a-e6f4-11e9-a96c-52543be04c81",
+    "name": "France Info",
+    "desc": "France · aac, information · AAC 192k",
+    "url": "http://icecast.radiofrance.fr/franceinfo-hifi.aac",
+    "category": "Featured",
+    "favicon": "https://www.francetvinfo.fr/assets/common/images/pwa/ios/120-0cfbd6d4.png",
+    "homepage": "https://www.francetvinfo.fr/en-direct/radio.html"
+  },
+  {
+    "id": "station-d2bbffaf-5d67-4a65-9772-097d8c0269d3",
+    "name": "France Inter",
+    "desc": "France · AAC 192k",
+    "url": "http://direct.franceinter.fr/live/franceinter-hifi.aac",
+    "category": "Featured",
+    "favicon": "https://www.franceinter.fr/favicon.ico",
+    "homepage": "https://www.franceinter.fr/"
+  },
+  {
+    "id": "station-9622cd46-0601-11e8-ae97-52543be04c81",
+    "name": "Europa Plus",
+    "desc": "The Russian Federation · dance, house · MP3 ",
+    "url": "http://ep256.hostingradio.ru:8052/europaplus256.mp3",
+    "category": "Featured",
+    "favicon": "http://liveam.tv/img/2494.jpg",
+    "homepage": "http://www.europaplus.ru/"
+  },
+  {
+    "id": "station-961c96ef-0601-11e8-ae97-52543be04c81",
+    "name": "ROCK FM",
+    "desc": "The Russian Federation · classic rock, pop rock · MP3 ",
+    "url": "http://nashe1.hostingradio.ru/rock-128.mp3",
+    "category": "Featured",
+    "favicon": "https://lh3.googleusercontent.com/D3taObR7tfyhwDFY40VS8DIVri7iif5RuzI9C-mXxRwF41vGZ_dO_n6MWM57P-mZczFC=w300",
+    "homepage": "http://www.rockfm.ru/"
+  },
+  {
+    "id": "station-c93f9c76-2ad4-464d-bff4-7f46e95f2601",
+    "name": "CLASSIC HITS RADIO 70 80 DiscoFunk ModernSoul Boogie",
+    "desc": "The United States Of America · 1970s, 1980s · AAC ",
+    "url": "https://radiopanther.radiolebowski.com/play",
+    "category": "Featured",
+    "homepage": "http://classichits.radio/"
+  },
+  {
+    "id": "station-63688c44-e90b-11e8-a471-52543be04c81",
+    "name": "РАДИО ВАНЯ",
+    "desc": "The Russian Federation · pop · AAC+ 64k",
+    "url": "https://icecast-radiovanya.cdnvideo.ru/radiovanya",
+    "category": "Featured",
+    "homepage": "http://www.radiovanya.ru/"
+  },
+  {
+    "id": "station-960c68f8-0601-11e8-ae97-52543be04c81",
+    "name": "RFI Monde",
+    "desc": "France · news, world music · MP3 64k",
+    "url": "http://live02.rfi.fr/rfimonde-64.mp3",
+    "category": "Featured",
+    "favicon": "http://www.rfi.fr/apple-touch-icon.png",
+    "homepage": "http://www.rfi.fr/"
+  },
+  {
+    "id": "station-96063f25-0601-11e8-ae97-52543be04c81",
+    "name": "Classic FM UK",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · classical · MP3 128k",
+    "url": "http://ice-the.musicradio.com/ClassicFMMP3",
+    "category": "Featured",
+    "favicon": "http://www.classicfm.com/assets_v4r/classic/img/favicon-196x196.png",
+    "homepage": "http://www.classicfm.com/"
+  },
+  {
+    "id": "station-5aaddcc0-1695-11e9-a80b-52543be04c81",
+    "name": "Faz",
+    "desc": "Islamic Republic Of Iran · MP3 128k",
+    "url": "http://www.radiofaaz.com:8000/radiofaaz",
+    "category": "Featured",
+    "homepage": "http://www.radiofaaz.com:8000/radiofaaz"
+  },
+  {
+    "id": "station-9627ddc0-0601-11e8-ae97-52543be04c81",
+    "name": "181.FM - Old School HipHop/RnB",
+    "desc": "The United States Of America · hiphop, oldschool · MP3 128k",
+    "url": "http://listen.181fm.com/181-oldschool_128k.mp3",
+    "category": "Featured",
+    "favicon": "http://www.181.fm/favicon.ico",
+    "homepage": "http://www.181.fm/"
+  },
+  {
+    "id": "station-960ac54b-0601-11e8-ae97-52543be04c81",
+    "name": "Your Classical - Relax",
+    "desc": "The United States Of America · classical, relax · MP3 128k",
+    "url": "http://relax.stream.publicradio.org/relax.mp3",
+    "category": "Featured",
+    "favicon": "http://www.yourclassical.org/apple-touch-icon.png",
+    "homepage": "http://www.yourclassical.org/"
+  },
+  {
+    "id": "station-165eab56-4a14-11e9-a4d7-52543be04c81",
+    "name": "DFM Дискач 90-х",
+    "desc": "The Russian Federation · 90-е, eurodance · AAC+ 96k",
+    "url": "https://dfm-disc90.hostingradio.ru/disc9096.aacp",
+    "category": "Featured",
+    "homepage": "https://dfm.ru/"
+  },
+  {
+    "id": "station-960d9241-0601-11e8-ae97-52543be04c81",
+    "name": "RMF FM",
+    "desc": "Poland · pop · AAC+ 48k",
+    "url": "http://195.150.20.9/RMFFM48",
+    "category": "Featured",
+    "favicon": "http://www.rmf.fm/assets/images/favicon/apple-icon-120x120.png?3",
+    "homepage": "http://www.rmf.fm/"
+  }
+]

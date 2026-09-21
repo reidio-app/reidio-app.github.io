@@ -1,0 +1,355 @@
+[
+  {
+    "id": "station-78012206-1aa1-11e9-a80b-52543be04c81",
+    "name": "MANGORADIO",
+    "desc": "Germany · music, variety · MP3 128k",
+    "url": "https://mangoradio.stream.laut.fm/mangoradio",
+    "category": "English",
+    "favicon": "https://mangoradio.de/wp-content/uploads/cropped-Logo-192x192.webp",
+    "homepage": "https://mangoradio.de/"
+  },
+  {
+    "id": "station-962cc6df-0601-11e8-ae97-52543be04c81",
+    "name": "Dance Wave!",
+    "desc": "Hungary · club dance electronic house trance · MP3 128k",
+    "url": "https://dancewave.online/dance.mp3",
+    "category": "English",
+    "favicon": "https://dancewave.online/dw_logo.png",
+    "homepage": "https://dancewave.online/"
+  },
+  {
+    "id": "station-9617a958-0601-11e8-ae97-52543be04c81",
+    "name": "Radio Paradise Main Mix (EU) 320k AAC",
+    "desc": "The United States Of America · california, eclectic · AAC 320k",
+    "url": "http://stream-uk1.radioparadise.com/aac-320",
+    "category": "English",
+    "favicon": "https://radioparadise.com/apple-touch-icon.png",
+    "homepage": "https://radioparadise.com/"
+  },
+  {
+    "id": "station-d1a54d2e-623e-4970-ab11-35f7b56c5ec3",
+    "name": "Classic Vinyl HD",
+    "desc": "The United States Of America · 1930, 1940 · MP3 320k",
+    "url": "https://icecast.walmradio.com:8443/classic",
+    "category": "English",
+    "favicon": "https://icecast.walmradio.com:8443/classic.jpg",
+    "homepage": "https://walmradio.com/classic"
+  },
+  {
+    "id": "station-ea8059be-d119-4de3-b27b-0d9bd6aedb17",
+    "name": "Adroit Jazz Underground",
+    "desc": "The United States Of America · avant-garde, bebop · MP3 320k",
+    "url": "https://icecast.walmradio.com:8443/jazz",
+    "category": "English",
+    "favicon": "https://icecast.walmradio.com:8443/jazz.jpg",
+    "homepage": "https://walmradio.com/jazz"
+  },
+  {
+    "id": "station-6eff3484-4ab4-4d36-bf27-9172c5aac15c",
+    "name": "Christmas Vinyl HD",
+    "desc": "The United States Of America · christian, christmas · MP3 320k",
+    "url": "https://icecast.walmradio.com:8443/christmas",
+    "category": "English",
+    "favicon": "https://icecast.walmradio.com:8443/christmas.png",
+    "homepage": "https://walmradio.com/christmas"
+  },
+  {
+    "id": "station-348dfc58-ce8c-413b-b264-0384f816344b",
+    "name": "WALM HD",
+    "desc": "The United States Of America · christian, christian music · MP3 320k",
+    "url": "https://icecast.walmradio.com:8443/walm",
+    "category": "English",
+    "favicon": "https://icecast.walmradio.com:8443/walm.jpg",
+    "homepage": "https://walmradio.com/walm"
+  },
+  {
+    "id": "station-98adecf7-2683-4408-9be7-02d3f9098eb8",
+    "name": "BBC World Service",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · news, talk · MP3 56k",
+    "url": "http://stream.live.vc.bbcmedia.co.uk/bbc_world_service",
+    "category": "English",
+    "favicon": "http://cdn-profiles.tunein.com/s24948/images/logoq.jpg?t=1",
+    "homepage": "https://www.bbc.co.uk/programmes/w172xzjgf6lxp7y"
+  },
+  {
+    "id": "station-313046e3-b203-4b9d-bc3e-393da7d97126",
+    "name": "WALM - Old Time Radio",
+    "desc": "The United States Of America · 78, 78-rpm · MP3 64k",
+    "url": "https://icecast.walmradio.com:8443/otr",
+    "category": "English",
+    "favicon": "https://icecast.walmradio.com:8443/otr.jpg",
+    "homepage": "https://walmradio.com/otr"
+  },
+  {
+    "id": "station-64bb1467-2585-4454-a96f-34cfbc864d41",
+    "name": "WALM 2 HD",
+    "desc": "The United States Of America · choral, christian · MP3 320k",
+    "url": "https://icecast.walmradio.com:8443/walm2",
+    "category": "English",
+    "favicon": "https://icecast.walmradio.com:8443/walm.jpg",
+    "homepage": "https://walmradio.com/walm2"
+  },
+  {
+    "id": "station-d28420a4-eccf-47a2-ace1-088c7e7cb7e0",
+    "name": "101 SMOOTH JAZZ",
+    "desc": "The United States Of America · easy listening, jazz · MP3 192k",
+    "url": "http://jking.cdnstream1.com/b22139_128mp3",
+    "category": "English",
+    "favicon": "http://101smoothjazz.com/favicon.ico",
+    "homepage": "http://101smoothjazz.com/"
+  },
+  {
+    "id": "station-2ce23ee2-95c5-407d-9df8-54c3cdde2825",
+    "name": "Adroit Jazz Underground HD Opus",
+    "desc": "The United States Of America · avant-garde, bebop · OGG 192k",
+    "url": "https://icecast.walmradio.com:8443/jazz_opus",
+    "category": "English",
+    "favicon": "https://icecast.walmradio.com:8443/jazz.jpg",
+    "homepage": "https://walmradio.com/jazz"
+  },
+  {
+    "id": "station-b96225b2-8536-4b9b-8add-03582fd2e6a2",
+    "name": "WALM 2 HD Opus",
+    "desc": "The United States Of America · choral, christian · OGG 192k",
+    "url": "https://icecast.walmradio.com:8443/walm2_opus",
+    "category": "English",
+    "favicon": "https://icecast.walmradio.com:8443/walm.jpg",
+    "homepage": "https://walmradio.com/walm2"
+  },
+  {
+    "id": "station-24e3676a-8de5-474c-8ed2-288fbb66d447",
+    "name": "Christmas Vinyl HD Opus",
+    "desc": "The United States Of America · christian, christmas · OGG 192k",
+    "url": "https://icecast.walmradio.com:8443/christmas_opus",
+    "category": "English",
+    "favicon": "https://icecast.walmradio.com:8443/christmas.jpg",
+    "homepage": "https://walmradio.com/christmas"
+  },
+  {
+    "id": "station-c93f9c76-2ad4-464d-bff4-7f46e95f2601",
+    "name": "CLASSIC HITS RADIO 70 80 DiscoFunk ModernSoul Boogie",
+    "desc": "The United States Of America · 1970s, 1980s · AAC ",
+    "url": "https://radiopanther.radiolebowski.com/play",
+    "category": "English",
+    "homepage": "http://classichits.radio/"
+  },
+  {
+    "id": "station-96063f25-0601-11e8-ae97-52543be04c81",
+    "name": "Classic FM UK",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · classical · MP3 128k",
+    "url": "http://ice-the.musicradio.com/ClassicFMMP3",
+    "category": "English",
+    "favicon": "http://www.classicfm.com/assets_v4r/classic/img/favicon-196x196.png",
+    "homepage": "http://www.classicfm.com/"
+  },
+  {
+    "id": "station-9627ddc0-0601-11e8-ae97-52543be04c81",
+    "name": "181.FM - Old School HipHop/RnB",
+    "desc": "The United States Of America · hiphop, oldschool · MP3 128k",
+    "url": "http://listen.181fm.com/181-oldschool_128k.mp3",
+    "category": "English",
+    "favicon": "http://www.181.fm/favicon.ico",
+    "homepage": "http://www.181.fm/"
+  },
+  {
+    "id": "station-960ac54b-0601-11e8-ae97-52543be04c81",
+    "name": "Your Classical - Relax",
+    "desc": "The United States Of America · classical, relax · MP3 128k",
+    "url": "http://relax.stream.publicradio.org/relax.mp3",
+    "category": "English",
+    "favicon": "http://www.yourclassical.org/apple-touch-icon.png",
+    "homepage": "http://www.yourclassical.org/"
+  },
+  {
+    "id": "station-961d9b63-0601-11e8-ae97-52543be04c81",
+    "name": ".977 Country",
+    "desc": "The United States Of America · country · MP3 128k",
+    "url": "http://15113.live.streamtheworld.com:3690/977_COUNTRY_SC",
+    "category": "English",
+    "homepage": "http://www.977music.com/"
+  },
+  {
+    "id": "station-961b7325-0601-11e8-ae97-52543be04c81",
+    "name": ".977 80s",
+    "desc": "The United States Of America · 80s · MP3 128k",
+    "url": "http://26433.live.streamtheworld.com:3690/977_80_SC",
+    "category": "English",
+    "homepage": "http://www.977music.com/"
+  },
+  {
+    "id": "station-961d5c4e-0601-11e8-ae97-52543be04c81",
+    "name": ".977 Hitz",
+    "desc": "The United States Of America · hits, top 40 · MP3 128k",
+    "url": "http://14833.live.streamtheworld.com/977_HITS_SC",
+    "category": "English",
+    "homepage": "http://www.977music.com/"
+  },
+  {
+    "id": "station-964be8b7-0601-11e8-ae97-52543be04c81",
+    "name": "Dance Wave Retro!",
+    "desc": "Hungary · 90s dance · MP3 128k",
+    "url": "https://dancewave.online/retrodance.mp3",
+    "category": "English",
+    "favicon": "https://dancewave.online/dwr_logo.png",
+    "homepage": "https://dancewave.online/"
+  },
+  {
+    "id": "station-961fa288-0601-11e8-ae97-52543be04c81",
+    "name": "Ambient Sleeping Pill",
+    "desc": "The United States Of America · ambient, meditation · MP3 256k",
+    "url": "http://radio.stereoscenic.com/asp-h",
+    "category": "English",
+    "homepage": "http://ambientsleepingpill.com/"
+  },
+  {
+    "id": "station-961787d1-0601-11e8-ae97-52543be04c81",
+    "name": "Frisky",
+    "desc": "The United States Of America · electronic, frisky · MP3 96k",
+    "url": "http://stream2.friskyradio.com/frisky_mp3_hi",
+    "category": "English",
+    "favicon": "https://s3.amazonaws.com/media.friskyradio.com/favicon.png",
+    "homepage": "https://www.friskyradio.com/"
+  },
+  {
+    "id": "station-9614bbb6-0601-11e8-ae97-52543be04c81",
+    "name": "LBC Radio",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · political talk · MP3 48k",
+    "url": "http://media-sov.musicradio.com/LBC973MP3Low",
+    "category": "English",
+    "favicon": "http://www.lbc.co.uk/assets_v4r/lbc/img/favicon-196x196.png",
+    "homepage": "http://www.lbc.co.uk/"
+  },
+  {
+    "id": "station-6ce8da92-859f-4f96-a5e4-503c1ddfbfbf",
+    "name": "Classic Vinyl HD Opus",
+    "desc": "The United States Of America · 1930, 1940 · OGG 192k",
+    "url": "https://icecast.walmradio.com:8443/classic_opus",
+    "category": "English",
+    "favicon": "https://icecast.walmradio.com:8443/classic.jpg",
+    "homepage": "https://walmradio.com/classic"
+  },
+  {
+    "id": "station-af6f51b1-0ca9-11ea-a87e-52543be04c81",
+    "name": "Intense Radio - We love Dance 256K",
+    "desc": "The Netherlands · clubhouse, dance · MP3 256k",
+    "url": "https://secure.live-streams.nl/main",
+    "category": "English",
+    "favicon": "https://www.intenseradio.net/wp-content/uploads/2023/09/intense-radio-vierkant-4d-2026.jpg",
+    "homepage": "https://www.intenseradio.net/"
+  },
+  {
+    "id": "station-963c00ab-0601-11e8-ae97-52543be04c81",
+    "name": "Intense Radio - We love Dance 256K",
+    "desc": "The Netherlands · clubhouse, dance · MP3 256k",
+    "url": "https://secure.live-streams.nl/main",
+    "category": "English",
+    "favicon": "https://www.intenseradio.net/wp-content/uploads/2023/09/intense-radio-vierkant-4d-2026.jpg",
+    "homepage": "https://www.intenseradio.net/"
+  },
+  {
+    "id": "station-960cf833-0601-11e8-ae97-52543be04c81",
+    "name": "SomaFM Groove Salad (128k MP3)",
+    "desc": "The United States Of America · ambient, chillout · MP3 128k",
+    "url": "https://ice5.somafm.com/groovesalad-128-mp3",
+    "category": "English",
+    "favicon": "https://somafm.com/img3/groovesalad-400.jpg",
+    "homepage": "https://somafm.com/groovesalad/"
+  },
+  {
+    "id": "station-9606ceae-0601-11e8-ae97-52543be04c81",
+    "name": "Radio Caroline",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · country, pop · MP3 128k",
+    "url": "http://78.129.202.200:8040/;",
+    "category": "English",
+    "favicon": "http://www.radiocaroline.co.uk/favicon.ico",
+    "homepage": "http://www.radiocaroline.co.uk/"
+  },
+  {
+    "id": "station-961dbb40-0601-11e8-ae97-52543be04c81",
+    "name": ".977 The Mix",
+    "desc": "The United States Of America · 80s, 90s · MP3 128k",
+    "url": "http://24293.live.streamtheworld.com/977_MIX_SC",
+    "category": "English",
+    "homepage": "http://www.977music.com/"
+  },
+  {
+    "id": "station-d017726b-50f4-4b47-a25e-bf4114b16f9e",
+    "name": "Classic Vinyl HD",
+    "desc": "The United States Of America · 1930, 1940 · MP3 320k",
+    "url": "https://icecast.walmradio.com:8443/classic",
+    "category": "English",
+    "favicon": "https://icecast.walmradio.com:8443/classic.jpg",
+    "homepage": "https://walmradio.com/classic"
+  },
+  {
+    "id": "station-96274cbb-0601-11e8-ae97-52543be04c81",
+    "name": "Big R Radio - 80s Metal FM",
+    "desc": "The United States Of America · 80s, aor · MP3 128k",
+    "url": "http://bigrradio.cdnstream1.com/5186_128",
+    "category": "English",
+    "favicon": "http://www.bigrradio.com/image/favicon/apple-touch-icon.png",
+    "homepage": "http://www.bigrradio.com/"
+  },
+  {
+    "id": "station-96200095-0601-11e8-ae97-52543be04c81",
+    "name": "Capital FM London",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · pop · MP3 128k",
+    "url": "http://media-ice.musicradio.com/CapitalMP3",
+    "category": "English",
+    "favicon": "http://assets6.capitalfm.com/2016/11/capital-3d-network-logo-large-canvas-1458228638-herowidev4-0.jpg",
+    "homepage": "http://www.capitalfm.com/london/"
+  },
+  {
+    "id": "station-960c7c81-0601-11e8-ae97-52543be04c81",
+    "name": "SomaFM Secret Agent (128k MP3)",
+    "desc": "The United States Of America · ambient, downtempo · MP3 128k",
+    "url": "https://ice2.somafm.com/secretagent-128-mp3",
+    "category": "English",
+    "favicon": "https://somafm.com/img3/secretagent-400.jpg",
+    "homepage": "https://somafm.com/secretagent/"
+  },
+  {
+    "id": "station-c4077677-dc2f-11e9-a8ba-52543be04c81",
+    "name": "Heart 80s",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · 80s, national · MP3 128k",
+    "url": "https://media-ssl.musicradio.com/Heart80sMP3",
+    "category": "English",
+    "favicon": "https://www.heart.co.uk/assets_v4r/heart/img/favicon-196x196.png",
+    "homepage": "https://www.heart.co.uk/80s"
+  },
+  {
+    "id": "station-96336b01-0601-11e8-ae97-52543be04c81",
+    "name": "Hard Rock Heaven",
+    "desc": "The United States Of America · 80s, glam metal · MP3 128k",
+    "url": "http://hydra.cdnstream.com/1521_128",
+    "category": "English",
+    "homepage": "http://hrhradio.com/"
+  },
+  {
+    "id": "station-9608ade8-0601-11e8-ae97-52543be04c81",
+    "name": "Heart London 106.2 [MP3]",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · commercial, hot adult contemporary · MP3 128k",
+    "url": "http://ice-sov.musicradio.com/HeartLondonMP3",
+    "category": "English",
+    "favicon": "https://cdn-profiles.tunein.com/s2846/images/logoq.jpg",
+    "homepage": "http://www.heart.co.uk/london"
+  },
+  {
+    "id": "station-9627dcf4-0601-11e8-ae97-52543be04c81",
+    "name": "181.FM - The Beat (HipHop/R&B)",
+    "desc": "The United States Of America · hiphop, rnb · MP3 128k",
+    "url": "http://listen.181fm.com/181-beat_128k.mp3",
+    "category": "English",
+    "favicon": "http://www.181.fm/favicon.ico",
+    "homepage": "http://www.181.fm/"
+  },
+  {
+    "id": "station-7ba4c184-fc2b-11e9-bbf2-52543be04c81",
+    "name": "NPR 24 Hour Program Stream",
+    "desc": "The United States Of America · news, news talk · MP3 96k",
+    "url": "http://npr-ice.streamguys1.com/live.mp3",
+    "category": "English",
+    "favicon": "https://static-assets.npr.org/static/images/favicon/favicon-96x96.png",
+    "homepage": "https://www.npr.org/2016/04/05/472557877/npr-program-stream"
+  }
+]

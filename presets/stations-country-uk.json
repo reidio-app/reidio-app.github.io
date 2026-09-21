@@ -1,0 +1,266 @@
+[
+  {
+    "id": "station-98adecf7-2683-4408-9be7-02d3f9098eb8",
+    "name": "BBC World Service",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · news, talk · MP3 56k",
+    "url": "http://stream.live.vc.bbcmedia.co.uk/bbc_world_service",
+    "category": "UK",
+    "favicon": "http://cdn-profiles.tunein.com/s24948/images/logoq.jpg?t=1",
+    "homepage": "https://www.bbc.co.uk/programmes/w172xzjgf6lxp7y"
+  },
+  {
+    "id": "station-96063f25-0601-11e8-ae97-52543be04c81",
+    "name": "Classic FM UK",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · classical · MP3 128k",
+    "url": "http://ice-the.musicradio.com/ClassicFMMP3",
+    "category": "UK",
+    "favicon": "http://www.classicfm.com/assets_v4r/classic/img/favicon-196x196.png",
+    "homepage": "http://www.classicfm.com/"
+  },
+  {
+    "id": "station-9614bbb6-0601-11e8-ae97-52543be04c81",
+    "name": "LBC Radio",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · political talk · MP3 48k",
+    "url": "http://media-sov.musicradio.com/LBC973MP3Low",
+    "category": "UK",
+    "favicon": "http://www.lbc.co.uk/assets_v4r/lbc/img/favicon-196x196.png",
+    "homepage": "http://www.lbc.co.uk/"
+  },
+  {
+    "id": "station-9606ceae-0601-11e8-ae97-52543be04c81",
+    "name": "Radio Caroline",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · country, pop · MP3 128k",
+    "url": "http://78.129.202.200:8040/;",
+    "category": "UK",
+    "favicon": "http://www.radiocaroline.co.uk/favicon.ico",
+    "homepage": "http://www.radiocaroline.co.uk/"
+  },
+  {
+    "id": "station-96200095-0601-11e8-ae97-52543be04c81",
+    "name": "Capital FM London",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · pop · MP3 128k",
+    "url": "http://media-ice.musicradio.com/CapitalMP3",
+    "category": "UK",
+    "favicon": "http://assets6.capitalfm.com/2016/11/capital-3d-network-logo-large-canvas-1458228638-herowidev4-0.jpg",
+    "homepage": "http://www.capitalfm.com/london/"
+  },
+  {
+    "id": "station-c4077677-dc2f-11e9-a8ba-52543be04c81",
+    "name": "Heart 80s",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · 80s, national · MP3 128k",
+    "url": "https://media-ssl.musicradio.com/Heart80sMP3",
+    "category": "UK",
+    "favicon": "https://www.heart.co.uk/assets_v4r/heart/img/favicon-196x196.png",
+    "homepage": "https://www.heart.co.uk/80s"
+  },
+  {
+    "id": "station-9608ade8-0601-11e8-ae97-52543be04c81",
+    "name": "Heart London 106.2 [MP3]",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · commercial, hot adult contemporary · MP3 128k",
+    "url": "http://ice-sov.musicradio.com/HeartLondonMP3",
+    "category": "UK",
+    "favicon": "https://cdn-profiles.tunein.com/s2846/images/logoq.jpg",
+    "homepage": "http://www.heart.co.uk/london"
+  },
+  {
+    "id": "station-6efe216d-bf7e-11e9-8502-52543be04c81",
+    "name": "LBC UK",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · news talk, talk · AAC 48k",
+    "url": "http://media-ice.musicradio.com/LBCUK",
+    "category": "UK",
+    "favicon": "https://cdn-radiotime-logos.tunein.com/s220687q.png",
+    "homepage": "https://www.lbc.co.uk/"
+  },
+  {
+    "id": "station-962b27a3-0601-11e8-ae97-52543be04c81",
+    "name": "Smooth Radio",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · easy listening, smooth · AAC 48k",
+    "url": "http://media-the.musicradio.com/SmoothEastMids",
+    "category": "UK",
+    "favicon": "http://www.smoothradio.com/assets_v4r/smooth/img/favicon-196x196.png",
+    "homepage": "http://www.smoothradio.com/"
+  },
+  {
+    "id": "station-9619e7d7-0601-11e8-ae97-52543be04c81",
+    "name": "TMM 1",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · alternative, alternative rock · MP3 128k",
+    "url": "https://listen-msmn.sharp-stream.com/nme1.mp3",
+    "category": "UK",
+    "favicon": "https://cdn-profiles.tunein.com/s159857/images/logod.png",
+    "homepage": "https://www.themusicmachine.co.uk/"
+  },
+  {
+    "id": "station-963ad02f-0601-11e8-ae97-52543be04c81",
+    "name": "LBC London (National stream)",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · news, talk · MP3 48k",
+    "url": "http://media-ice.musicradio.com/LBCUKMP3Low",
+    "category": "UK",
+    "favicon": "http://lbc.co.uk/assets_v4r/lbc/img/favicon-196x196.png",
+    "homepage": "http://lbc.co.uk/"
+  },
+  {
+    "id": "station-e7205cd4-dc30-11e9-a8ba-52543be04c81",
+    "name": "Heart 70s",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · 70s, national · MP3 128k",
+    "url": "https://media-ssl.musicradio.com/Heart70sMP3",
+    "category": "UK",
+    "homepage": "https://www.heart.co.uk/70s"
+  },
+  {
+    "id": "station-0a1e0bb0-dc37-11e9-a8ba-52543be04c81",
+    "name": "Gold",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · classic hits, national · MP3 128k",
+    "url": "https://media-ssl.musicradio.com/GoldMP3",
+    "category": "UK",
+    "favicon": "https://www.mygoldmusic.co.uk/assets_v4r/gold/img/favicon-196x196.png",
+    "homepage": "https://www.mygoldmusic.co.uk/"
+  },
+  {
+    "id": "station-598c4d0e-6b06-43fb-bff4-717c591213a9",
+    "name": "BBC World Service",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · bbc · MP3 56k",
+    "url": "https://stream.live.vc.bbcmedia.co.uk/bbc_world_service",
+    "category": "UK",
+    "favicon": "https://rmp.files.bbci.co.uk/rmp-shared-assets/1.4.0/img/network-logos/national/bbc_world_service_colour.svg",
+    "homepage": "https://www.bbc.co.uk/sounds/play/live:bbc_world_service"
+  },
+  {
+    "id": "station-32da2113-229c-11e9-a80b-52543be04c81",
+    "name": "Classic FM",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · classic fm, classical · MP3 128k",
+    "url": "http://media-ice.musicradio.com/ClassicFMMP3",
+    "category": "UK",
+    "favicon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Classic_FM_logo.svg/472px-Classic_FM_logo.svg.png",
+    "homepage": "https://www.classicfm.com/"
+  },
+  {
+    "id": "station-478fd7f4-dc36-11e9-a8ba-52543be04c81",
+    "name": "Smooth Chill",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · chillout, national · MP3 128k",
+    "url": "https://media-ssl.musicradio.com/ChillMP3",
+    "category": "UK",
+    "favicon": "https://www.smoothradio.com/assets_v4r/smooth/img/favicon-196x196.png",
+    "homepage": "https://www.smoothradio.com/chill/"
+  },
+  {
+    "id": "station-fa76f16f-dc31-11e9-a8ba-52543be04c81",
+    "name": "Heart Dance",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · dance, national · MP3 128k",
+    "url": "https://media-ssl.musicradio.com/HeartDanceMP3",
+    "category": "UK",
+    "favicon": "https://www.heart.co.uk/assets_v4r/heart/img/favicon-196x196.png",
+    "homepage": "https://www.heart.co.uk/dance"
+  },
+  {
+    "id": "station-961f9f7f-0601-11e8-ae97-52543be04c81",
+    "name": "Jazz London Radio",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · jazz · MP3 256k",
+    "url": "http://radio.canstream.co.uk:8075/live.mp3",
+    "category": "UK",
+    "favicon": "https://www.jazzlondonradio.com/images/favicon.ico",
+    "homepage": "http://www.jazzlondonradio.com/"
+  },
+  {
+    "id": "station-52bb00fe-dc31-11e9-a8ba-52543be04c81",
+    "name": "Heart 90s",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · 90s, national · MP3 128k",
+    "url": "https://media-ssl.musicradio.com/Heart90sMP3",
+    "category": "UK",
+    "favicon": "https://www.heart.co.uk/assets_v4r/heart/img/favicon-196x196.png",
+    "homepage": "https://www.heart.co.uk/90s"
+  },
+  {
+    "id": "station-9619e894-0601-11e8-ae97-52543be04c81",
+    "name": "TMM 2",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · alternative, hiphop · MP3 128k",
+    "url": "https://listen-msmn.sharp-stream.com/nme2.mp3",
+    "category": "UK",
+    "favicon": "https://cdn-profiles.tunein.com/s155539/images/logod.png",
+    "homepage": "https://www.themusicmachine.co.uk/"
+  },
+  {
+    "id": "station-ba093e53-c020-484b-a6a6-b184e7382744",
+    "name": "Classic FM Relax",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · AAC 48k",
+    "url": "http://media-the.musicradio.com/ClassicFM-M-Relax",
+    "category": "UK",
+    "favicon": "https://images-na.ssl-images-amazon.com/images/I/61wHBPSryzL.png"
+  },
+  {
+    "id": "station-03387f8e-4a8b-4b2b-8740-5d35a5cc8c48",
+    "name": "RadioX UK",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · MP3 128k",
+    "url": "http://icecast.thisisdax.com/RadioXUKMP3",
+    "category": "UK",
+    "homepage": "https://www.radiox.co.uk/"
+  },
+  {
+    "id": "station-961917f2-0601-11e8-ae97-52543be04c81",
+    "name": "LBC London (London stream) AAC",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · london, news · AAC 48k",
+    "url": "http://media-sov.musicradio.com/LBCLondon",
+    "category": "UK",
+    "favicon": "http://www.lbc.co.uk/assets_v4r/lbc/img/favicon-196x196.png",
+    "homepage": "http://www.lbc.co.uk/faq/online-listen-live/"
+  },
+  {
+    "id": "station-9639448b-0601-11e8-ae97-52543be04c81",
+    "name": "Heart London 106.2 [AAC]",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · adult contemporary, pop rock · AAC 48k",
+    "url": "http://media-ice.musicradio.com/HeartLondon",
+    "category": "UK",
+    "favicon": "http://www.heart.co.uk/assets_v4r/heart/img/favicon-196x196.png",
+    "homepage": "http://www.heart.co.uk/london"
+  },
+  {
+    "id": "station-973c88e9-bf3d-11e8-aaf2-52543be04c81",
+    "name": "LBC London News",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · news · AAC 48k",
+    "url": "http://media-ice.musicradio.com/LBC1152",
+    "category": "UK",
+    "favicon": "http://lbc.co.uk/assets_v4r/lbc/img/favicon-196x196.png",
+    "homepage": "http://lbc.co.uk/"
+  },
+  {
+    "id": "station-1ee17d63-1702-11e8-ae97-52543be04c81",
+    "name": "Classic FM UK",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · classical · AAC 48k",
+    "url": "http://media-the.musicradio.com/ClassicFM",
+    "category": "UK",
+    "homepage": "http://www.classicfm.com/"
+  },
+  {
+    "id": "station-98137c2d-ce68-4e33-8cb7-ddf3692ecc9d",
+    "name": "BBC Radio 4 (128k)",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · comedy, drama · UNKNOWN ",
+    "url": "http://as-hls-ww-live.akamaized.net/pool_55057080/live/ww/bbc_radio_fourfm/bbc_radio_fourfm.isml/bbc_radio_fourfm-audio%3d128000.norewind.m3u8",
+    "category": "UK",
+    "favicon": "https://cdn-radiotime-logos.tunein.com/s25419q.png",
+    "homepage": "https://www.bbc.co.uk/radio4"
+  },
+  {
+    "id": "station-283402b5-dc2e-11e9-a8ba-52543be04c81",
+    "name": "Heart UK",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · adult contemporary, national · MP3 128k",
+    "url": "http://media-ice.musicradio.com/HeartUKMP3",
+    "category": "UK",
+    "homepage": "https://www.heart.co.uk/"
+  },
+  {
+    "id": "station-33d17f6d-df26-4524-8e55-79acfc796ac7",
+    "name": "BBC Afrique Radio",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · africa, afrique · AAC+ 101k",
+    "url": "http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/sbr_low/ak/bbc_afrique_radio.m3u8",
+    "category": "UK",
+    "favicon": "https://static.files.bbci.co.uk/ws/simorgh-assets/public/afrique/images/icons/icon-128x128.png",
+    "homepage": "https://www.bbc.com/afrique/bbc_afrique_radio/liveradio"
+  },
+  {
+    "id": "station-def842a8-e3aa-11e8-a9cc-52543be04c81",
+    "name": "BEST SMOOTH JAZZ - UK",
+    "desc": "The United Kingdom Of Great Britain And Northern Ireland · MP3 128k",
+    "url": "http://64.95.243.43:8002/stream",
+    "category": "UK",
+    "homepage": "http://bestsmoothjazz.com/"
+  }
+]
